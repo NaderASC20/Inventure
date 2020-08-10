@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: "Jura";
+}
+
+nav {
+    height: 11vh;
+}
+
+.navbar{ background: black; font-size: 25; height: 7vh;}
+
+.nav-link , .navbar-brand{ color: #ffffff; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: white; color: black; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background: orange !important;}
+
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+#biglogo {
+    width: 1070px;
+    height: 306px;
+}
+
+.logoslide {
+    padding-top: 105px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionSlide {
+    overflow-x: hidden;
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 1316.5px;
+}
+
+.subtitleContainer {
+    text-align: center;
+    width: 1000px;
+    margin-bottom: 15vh;
+}
+
+#layoverBox {
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 1316.5px;
+    background-color: #000000;
+    opacity: .66;
+}
+
+.textcontainer {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#plantpic {
+    overflow-x: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 1975px;
+    height: 1316.5px;
+}
+
+#mission {
+    font-size: 80;
+}
+
+#missionstatement {
+    font-size: 35;
+}
+
+.textcontainer {
+    width: 80vw;
+}
+
+.overimg {
+    font-size: 50;
+}
+
+.slide3Container {
+    display: block;
+
+}
+
+.imagesContainer {
+    width: 100vw;
+    height: 1269;
+    display: flex;
+    flex-direction: row;
+}
+.forStartup {
+    position: relative;
+    display: inline-block;
+    height: 1269;
+    width: 50vw;
+}
+
+.forInvestors {
+    position: relative;
+    display: block;
+    height: 1269;
+    width: 50vw;
+}
+
+.layoverBoxStartup {
+    position: absolute;
+    z-index: 0;
+    width: 50vw;
+    height: 1269;
+    background-color: #000000;
+    opacity: .66;
+}
+
+.layoverBoxInvestor {
+    position: absolute;
+    z-index: 0;
+    width: 50vw;
+    height: 1269;
+    background-color: #000000;
+    opacity: .66;
+}
+
+.textcontainer2 {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 95;
+    line-height: 1;
+}
+
+span {
+    font-size: 50;
+}
+
+.textcontainer4 {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 12.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 95;
+    line-height: 1;
+}
+
+
+#startup {
+    z-index: -1;
+    position: absolute;
+    width: 50vw;
+}
+
+#investor {
+    z-index: -1;
+    position: absolute;
+    width: 50vw;
+}
+
+
+.learnContainer{
+    position: relative;
+}
+.learn_more_box{
+    border-radius: 30px;
+    z-index: 2;
+    bottom: 10px;
+    width: 50%;
+
+    
+}
+
+.descTextContainer {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    width: 40vw
+}
+
+
+.descText {
+    z-index: 2;
+    font-size: 40;
+}
+
+
+
+.center_learn_more{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    margin-top: 900px;
+    background-color: black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid white;
+}
+
+.center_learn_more a{
+    color: white;
+}
+
+.center_learn_more a:hover {
+    color: rgb(201, 247, 110);
+    text-decoration: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
