@@ -9,14 +9,14 @@ body {
     display: block;
     background-color: black;
     color: white;
-    font-family: "Jura";
+    font-family: 'Jura', sans-serif;
 }
 
 nav {
     height: 11vh;
 }
 
-.navbar{ background: black; font-size: 25; height: 7vh;}
+.navbar{ background: black; font-size: 25; max-height: 10vh;}
 
 .nav-link , .navbar-brand{ color: #ffffff; cursor: pointer;}
 
@@ -34,15 +34,18 @@ nav {
 }
 
 #biglogo {
-    width: 1070px;
-    height: 306px;
+    max-width: 50%;
+    /* max-width: 1070px; */
+    max-height: 50%;
+    /* max-height: 306px; */
+    
 }
 
 .logoslide {
-    padding-top: 105px;
     padding-left: 20px;
     padding-right: 20px;
-    height: 100vh;
+    margin-top: 10vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -52,6 +55,7 @@ nav {
 
 .missionSlide {
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
     display: block;
     width: 100vw;
@@ -77,7 +81,7 @@ nav {
     position: absolute;
     text-align: center;
     z-index: 2;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -87,7 +91,6 @@ nav {
     position: absolute;
     z-index: -1;
     width: 1975px;
-    height: 1316.5px;
 }
 
 #mission {
@@ -108,26 +111,29 @@ nav {
 
 .slide3Container {
     display: block;
+    overflow-y: hidden;
+    min-height: 120%;
+    width: 100vw;
 
 }
 
 .imagesContainer {
     width: 100vw;
-    height: 1269;
+    height: 120%;
     display: flex;
     flex-direction: row;
 }
 .forStartup {
     position: relative;
     display: inline-block;
-    height: 1269;
+    height: 120%;
     width: 50vw;
 }
 
 .forInvestors {
     position: relative;
     display: block;
-    height: 1269;
+    height: 120%;
     width: 50vw;
 }
 
@@ -135,7 +141,7 @@ nav {
     position: absolute;
     z-index: 0;
     width: 50vw;
-    height: 1269;
+    height: 120%;
     background-color: #000000;
     opacity: .66;
 }
@@ -144,7 +150,7 @@ nav {
     position: absolute;
     z-index: 0;
     width: 50vw;
-    height: 1269;
+    height: 120%;
     background-color: #000000;
     opacity: .66;
 }
@@ -153,7 +159,7 @@ nav {
     position: absolute;
     text-align: center;
     z-index: 2;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 95;
@@ -168,7 +174,7 @@ span {
     position: absolute;
     text-align: center;
     z-index: 2;
-    top: 12.4%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 95;
@@ -179,13 +185,14 @@ span {
 #startup {
     z-index: -1;
     position: absolute;
-    width: 50vw;
+    max-width: 50vw;
+ 
 }
 
 #investor {
     z-index: -1;
     position: absolute;
-    width: 50vw;
+    max-width: 50vw;
 }
 
 
@@ -209,7 +216,8 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1;
-    width: 40vw
+    width: 40vw;
+    margin-top: 94px;
 }
 
 
@@ -220,30 +228,35 @@ span {
 
 
 
-.center_learn_more{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    margin-top: 900px;
+html{
+    scroll-behavior: smooth;
+}
+
+
+.launch {
+    margin-left: 5%;
+    margin-right: 20vw;
+    text-align: center;
     background-color: black;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 90%;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     border: 3px solid white;
+    font-size: 35px;
+    padding: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
-.center_learn_more a{
+.launch a{
     color: white;
-}
-
-.center_learn_more a:hover {
-    color: rgb(201, 247, 110);
     text-decoration: none;
 }
 
-
-html{
-    scroll-behavior: smooth;
+.launch a:hover{
+    text-decoration: none;
+    color: yellowgreen;
 }
