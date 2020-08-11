@@ -32,3 +32,95 @@ nav {
 .navbar-collapse{
     justify-content: flex-end;
 }
+
+/* ----------------------------------------------------------------------------- */
+
+/* Button stuff */
+.portalContainer .buttons {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 0px;
+}
+
+.portalContainer .buttons input{
+    margin-left: 60px;
+}
+
+.portalContainer .buttons label{
+    margin-left: 3px;
+    font-size: 25px;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color:#ffffff;
+    border-color: black;
+	border-radius:20px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family: "Jura";
+    font-size:25px;
+    margin-left: 60px;
+	padding: 2px 9px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.dropdown-check-list {
+    display: inline-block;
+  }
+  .dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #ccc;
+  }
+  .dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+  }
+  .dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .dropdown-check-list ul.items li {
+    list-style: none;
+  }
+  .dropdown-check-list.visible .anchor {
+    color: #0094ff;
+  }
+  .dropdown-check-list.visible .items {
+    display: block;
+  }

@@ -36,12 +36,14 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
         <li class="nav-item">
-            <a class="nav-link" data-value="startUpPortal" href="../html/startupportal.html" target = "_blank" >Start Up Portal</a>        </li>  
+            <a class="nav-link" data-value="startUpPortal" href="../html/startupportal.html" target = "_blank" >Start Up Portal</a>        
+        </li>  
     <li class="nav-item">
         <a class="nav-link " data-value="investorPortal" target = "_blank" href="investorportal.html">Investor Portal</a>    
-        </li>
+    </li>
         <li class="nav-item"> 
-        <a class="nav-link " target = "_blank" data-value="login" href="#">Log in</a>         </li>   
+        <a class="nav-link " target = "_blank" data-value="login" href="#">Log in</a>         
+    </li>   
     </ul> 
     </div></nav>
 
@@ -54,8 +56,8 @@
 
     <div class="buttons">
         <div>
-            <input type="checkbox" id="Angel Investors" name="Angel Investors">
-            <label for="Angel Investors">Angel Investors</label>
+            <input type="checkbox" id="Networking/Data" name="Networking/Data">
+            <label for="Networking/Data">Networking/Data</label>
         </div>
         <div>
             <input type="checkbox" id="Venture Capitalists" name="Venture Capitalists">
@@ -71,11 +73,45 @@
         </div>
 
     </div>
+        
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+        <span class="anchor">Please select your interests</span>
+        <ul class="items">
+            <li><input type="checkbox" />Networking/Data</li>
+            <li><input type="checkbox" />Electronic Gadgets</li>
+            <li><input type="checkbox" />Virtual Reality</li>
+            <li><input type="checkbox" />Machine Learning</li>
+            <li><input type="checkbox" />Robotics</li>
+            <li><input type="checkbox" />Chemical Engineering</li>
+            <li><input type="checkbox" />Mechanical Engineering</li>
+            <li><input type="checkbox" />Music</li>
+            <li><input type="checkbox" />Digitalized Application</li>
+            <li><input type="checkbox" />Health + Wellness</li>
+            <li><input type="checkbox" />Data Storage + Security</li>
+            <li><input type="checkbox" />Trave</li>
+            <li><input type="checkbox" />Music</li>
+            <li><input type="checkbox" />Music</li>
+            <li><input type="checkbox" />Music</li>
+            <li><input type="checkbox" />Music</li>
+            <li><input type="checkbox" />Music</li>
 
-    <div class="ResultsContainer">
+        </ul>
+    </div>
+    <script type="text/javascript">
 
+        var checkList = document.getElementById('list1');
+        checkList.getElementsByClassName('anchor')[0].onclick = function (evt) {
+            if (checkList.classList.contains('visible'))
+                checkList.classList.remove('visible');
+            else
+                checkList.classList.add('visible');
+        }
+    </script>
+
+
+</div>
     </div>
-    </div>
+     
     </body>
 
 
