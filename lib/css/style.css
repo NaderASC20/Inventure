@@ -35,10 +35,7 @@ nav {
 
 #biglogo {
     max-width: 50%;
-    /* max-width: 1070px; */
     max-height: 50%;
-    /* max-height: 306px; */
-    
 }
 
 .logoslide {
@@ -119,21 +116,21 @@ nav {
 
 .imagesContainer {
     width: 100vw;
-    height: 120%;
+    min-height: 120%;
     display: flex;
     flex-direction: row;
 }
 .forStartup {
     position: relative;
     display: inline-block;
-    height: 120%;
+    min-height: 120%;
     width: 50vw;
 }
 
 .forInvestors {
     position: relative;
     display: block;
-    height: 120%;
+    min-height: 120%;
     width: 50vw;
 }
 
@@ -141,7 +138,7 @@ nav {
     position: absolute;
     z-index: 0;
     width: 50vw;
-    height: 120%;
+    min-height: 120%;
     background-color: #000000;
     opacity: .66;
 }
@@ -150,7 +147,7 @@ nav {
     position: absolute;
     z-index: 0;
     width: 50vw;
-    height: 120%;
+    min-height: 120%;
     background-color: #000000;
     opacity: .66;
 }
