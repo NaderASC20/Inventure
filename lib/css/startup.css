@@ -16,6 +16,11 @@ nav {
     height: 11vh;
 }
 
+p {
+    margin: 0
+
+}
+
 .navbar{ background: black; font-size: 25; max-height: 10vh;}
 
 .nav-link , .navbar-brand{ color: #ffffff; cursor: pointer;}
@@ -26,9 +31,86 @@ nav {
 
 .navbar-collapse{ justify-content: flex-end;}
 
-.navbar-toggler{  background: orange !important;}
+.navbar-toggler{  background: white !important;}
 
 
 .navbar-collapse{
     justify-content: flex-end;
+}
+
+
+/* Website Contents */
+.portalContainer {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+}
+
+/* Title and Stuff */
+.portalText{
+    margin-top: 40px;
+    margin-left: 60px;
+    color: white;
+}
+
+.portalText #startup {
+    font-size: 85px;
+}
+
+.portalText #whattype {
+    font-size: 45px;
+}
+
+/* Button stuff */
+.portalContainer .buttons {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 0px;
+}
+
+.portalContainer .buttons input{
+    margin-left: 60px;
+}
+
+.portalContainer .buttons label{
+    margin-left: 3px;
+    font-size: 25px;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color:#ffffff;
+    border-color: black;
+	border-radius:20px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family: "Jura";
+    font-size:25px;
+    margin-left: 60px;
+	padding: 2px 9px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* Results */
+
+.ResultsContainer {
+    margin-top: 30px;
+    width: 94vw;
+    margin-left: 60px;
+    height: 60vh;
+    border: 1px white solid;
 }
