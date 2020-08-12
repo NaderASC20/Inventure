@@ -37,6 +37,10 @@ nav {
   position: sticky;
 }
 
+.start-ContactInfo, .dropdown-check-list {
+  font-weight: bold;
+}
+
 .dropdown-check-list {
     display: inline-block;
     margin-top: 10px;
@@ -149,8 +153,7 @@ nav {
     height: 150px;
     border: 5px black solid; 
     border-radius: 100%;
-    /* float: right; */
-    margin-right: 40px;
+    
   }
 
   .start_TypeText{
@@ -170,4 +173,35 @@ nav {
   border: 1px solid black;
   border-radius: 15px;
   padding: 15px;
+}
+
+.star{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myButton2 {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color:#ffffff;
+    border-color: black;
+	border-radius:20px;
+	border:1px solid rgb(106, 106, 245);
+	display:inline-block;
+	cursor:pointer;
+	color: rgb(106, 106, 245);
+	font-family: "Jura";
+    font-size:20px;
+	padding: 2px 9px;
+    text-decoration:none;
+    margin-top: 10px;
+
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
 }
