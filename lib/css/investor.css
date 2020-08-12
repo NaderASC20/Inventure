@@ -94,7 +94,6 @@ nav {
     display: none;
     margin: 0;
     outline: none;
-    /* border: 1px solid #ccc; */
     border-top: none;
   }
   .dropdown-check-list ul.items li {
@@ -110,8 +109,6 @@ nav {
   }
 
   .investor_text{
-    /* margin-top: 60px;
-    margin-left: 50px; */
     margin-top: 60px;
     margin-left: 50px;
   
@@ -138,16 +135,7 @@ nav {
     justify-content: space-around;
 }
 
-  .start-Container{
-    /* margin-left: 490px; 
   
-     margin-top: -170px;
-    font-size: 10px;
-    font-weight: bold;
-    text-align: center; */
-    
-  }
-
   .StartUp_Image{
     width: 150px;
     height: 150px;
@@ -156,19 +144,11 @@ nav {
     
   }
 
-  .start_TypeText{
-    /* margin-left:60px */
-  }
 .contactInfo {
   text-align: center;
 }
 
 .startupCardDesc{
-  /* border: 1px black solid; 
-  width:450px; 
-  height: 250px;
-  border-radius: 10%; */
-
   max-width: 50%;
   border: 1px solid black;
   border-radius: 15px;

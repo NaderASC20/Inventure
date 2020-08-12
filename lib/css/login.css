@@ -191,12 +191,10 @@ p {
 }
 #logo {
 	position: absolute;
-	top: 37%;
-	bottom: 50%;
-	right: 59%;
-	transform: translate(50%,50%);
-	margin-top: 2px;
-	
+	font-size: 60px;
+	color: white;
+	top: calc(50% - 30px);
+	left: calc(50% - 200px);
 }
 
 .incorrectpass {
