@@ -4,8 +4,10 @@
         <title>Startup Portal</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/startup.css">
+
         <link rel="apple-touch-icon" sizes="57x57" href="../../images/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="../../images/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-icon-72x72.png">
@@ -20,10 +22,17 @@
         <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
+
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="../../images/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
         <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
     </head>
 
 
@@ -91,10 +100,64 @@
                     <a href="#" class="myButton2">Chat Now</a>    
                 </div>
             </div> -->
-        </div>
+
+
+            <div id= "chatWindowID" class="chatWindow">
+                <div class="chatHeader">
+                     <div class="headshotContainer"><img id= headshot src="https://randomuser.me/api/portraits/med/men/75.jpg"></div> <!--GET USER IMG -->
+                     <div><p id=Name class="headerName" style="font-size: 20px;" style="text-align: center;">Chat with John Smith</p></div>
+                     <div><img id="xButtonID" class="xButton" src="../../images/X SVG.svg"></div>
+                </div>
         
-    </div>
+                <div class="messagingContainer">
+                    
+                    
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="message">
+                    <button id="submitButton" style="font-size: 20px;">send</button>
+                </div>
+
+            </div>
+        
+            </div>
+
+        </div>
+        </div>
+        <!-- Investor Cards finished -->
+
+<!-- CHAT WINDOW -->
 </div>
+
+
+ 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+    //  https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<!-- Your web app's Firebase configuration -->
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDvCCxbkl8CJsmkIr8CtW8SODOvmjpl89o",
+    authDomain: "inventure-50eb3.firebaseapp.com",
+    databaseURL: "https://inventure-50eb3.firebaseio.com",
+    projectId: "inventure-50eb3",
+    storageBucket: "inventure-50eb3.appspot.com",
+    messagingSenderId: "614561427282",
+    appId: "1:614561427282:web:49f54f33ef4bf171cbd48b",
+    measurementId: "G-Q79NDC6QZG"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  
+
 </body>
 
 
@@ -102,5 +165,6 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="../js/startup.js"></script>
+<script src="../js/chat.js"></script>
 </html>
 

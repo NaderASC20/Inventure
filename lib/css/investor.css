@@ -109,7 +109,7 @@ nav {
   }
 
   .investor_text{
-    margin-top: 60px;
+    margin-top: 10vh;
     margin-left: 50px;
   
   }
@@ -119,20 +119,21 @@ nav {
   }
 
   .start-ContactInfo{
-    border-radius: 20px;
-    background-color: whitesmoke;
-    border: 3px black solid;
-    width: 60vw;
-    min-height: 35vh;
-    color: black;
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-left: 450px;
-    overflow: hidden; 
+  
+      border-radius: 20px;
+      background-color: whitesmoke;
+      /* border: 3px red solid; */
+      width: 60vw;
+      min-height: 35vh;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-left: 450px;
+      overflow: hidden; 
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
 }
 
   
@@ -185,3 +186,66 @@ nav {
 	position:relative;
 	top:1px;
 }
+
+.huge_box{
+  border: 3px solid whitesmoke;
+  padding-top: 20px;
+  border-radius: 3%;
+  margin-bottom: 5vh;
+
+}
+
+.business_frame{
+  overflow-y: scroll;
+}
+
+.profileContainer {
+  border: solid 3px white;
+  margin-bottom: 60px;
+  border-radius: 25px;
+  background-color: black;
+}
+
+.profileContainer {
+  border-radius: 25px;
+}
+
+.highResIMG {
+  border-radius: 25px
+}
+
+#news {
+  border-radius: 25px;
+}
+
+.profileContainer img{
+  max-height: 400px;
+}
+
+.font{
+  font-family: "Jura";
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 150px;
+}
+
+  .center_container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .circle_developers{
+    display:flex;
+    justify-content: space-evenly;
+  }
+
+  .circle_desc{
+    display:flex;
+    justify-content: space-evenly;
+  }

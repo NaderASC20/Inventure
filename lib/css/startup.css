@@ -139,11 +139,12 @@ p {
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 94vw;
-    min-height: 80vh;
+    min-height: 60vh;
     border: 3px white solid;
     padding-top: 40px;
     border-radius: 20px;
     font-weight: bold;
+    margin-right: 100px;
 }
 
 .ResultsContainer .investorCard {
@@ -179,3 +180,111 @@ p {
     height: 6;
 }
 
+/* CHAT WINDOW CODE */
+.ResultsContainer *{
+    /* border: 1px red solid  */
+}
+.chatWindow {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 20vw;
+    min-height: 25vw;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 25px;
+    bottom: 0;
+    right: 0;
+    margin-right: 1vw;
+    margin-bottom: 10px;
+    padding: 0.4vw;
+}
+
+.chatWindow .headshotContainer {
+    width: inherit;
+    padding: 0.1vw;
+}
+
+.chatWindow img{
+    border-radius: 15px;
+    max-height: 6vh;
+}
+.chatWindow .chatHeader {
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+    flex-direction: row;
+    background-color: black;
+
+}
+.chatWindow *{
+    /* border: solid red 1px; */
+}
+
+.chatWindow .messagingContainer {
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+    height: 37vh;
+    overflow-y: scroll;
+    font-size: 16px;
+    color: white;
+}
+
+.chatWindow .messagingContainer p{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.3vw
+}
+
+.chatWindow .messagingContainer div{
+    padding: 0.2vw;
+}
+
+.chatWindow .inputBox {
+    display: flex;
+    align-items: center;
+    min-height: 5vh;
+    max-width: 20vw;
+}
+
+.chatWindow .inputBox input{
+    max-height: 4vh;
+    width: 15vw;
+    background-color: rgb(161, 161, 161);
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold   ;
+    font-size: 20px;
+    padding: .9vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatWindow .inputBox button{
+    width: 6vw;
+    height: 4vh;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: cornflowerblue;
+}
+
+button {
+    transition-duration: 0.4s;
+  }
+  
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
