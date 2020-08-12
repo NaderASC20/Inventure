@@ -33,6 +33,9 @@ nav {
     justify-content: flex-end;
 }
 
+#list1 {
+  position: sticky;
+}
 
 .dropdown-check-list {
     display: inline-block;
@@ -124,27 +127,47 @@ nav {
     padding: 10px;
     margin-bottom: 20px;
     margin-left: 450px;
-    overflow: hidden;
-  }
+    overflow: hidden; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
   .start-Container{
-    margin-left: 500px;
-    float: right;
-    margin-top: -270px;
+    /* margin-left: 490px; 
+  
+     margin-top: -170px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center; */
+    
   }
 
   .StartUp_Image{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 5px black solid; 
     border-radius: 100%;
-    float: right;
-    margin-right: 40px;ft;
-  
-  .start_TypeText{
-    margin-left:60px
+    /* float: right; */
+    margin-right: 40px;
   }
 
-  .test{
-    vb
+  .start_TypeText{
+    /* margin-left:60px */
   }
+.contactInfo {
+  text-align: center;
+}
+
+.startupCardDesc{
+  /* border: 1px black solid; 
+  width:450px; 
+  height: 250px;
+  border-radius: 10%; */
+
+  max-width: 50%;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}

@@ -3,7 +3,6 @@
     <head>
         <title>Inventure Login Portal</title>
         <link rel="stylesheet" href="../css/login.css">
-        <script src="login.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -52,12 +51,12 @@
 		</div>
 		<br>
 		<div class="login">
-				<input type="text" placeholder="username" name="user" required><br>
-				<input type="password" placeholder="password" name="password" required><br>
-                <a href="startup.js"><input id="login_button" type="button" value="Login"></a>
+				<input id="username" type="text" placeholder="username" name="user" required><br>
+				<input id="password" type="password" placeholder="password" name="password" required><br>
+                <a id="loginButton" class='isDisabled' href="#"><input type="button" value="Login"></a>
         </div>
         <div id="logo">
-            <img src="/images/inventureSMALL.png" alt="Logo" style="width:320px; height:100px">
+            Login
         </div>
 </body>
 
