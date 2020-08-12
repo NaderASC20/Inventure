@@ -10,6 +10,11 @@ body {
     background-color: black;
     color: white;
     font-family: 'Jura', sans-serif;
+    margin-left: 60px;
+}
+
+html,body {
+    height: 100%;
 }
 
 nav {
@@ -42,14 +47,12 @@ p {
 /* Website Contents */
 .portalContainer {
     width: 100vw;
-    height: 90vh;
     margin-top: 10vh;
 }
 
 /* Title and Stuff */
 .portalText{
     margin-top: 40px;
-    margin-left: 60px;
     color: white;
 }
 
@@ -71,13 +74,12 @@ p {
     margin-left: 0px;
 }
 
-.portalContainer .buttons input{
-    margin-left: 60px;
-}
 
 .portalContainer .buttons label{
     margin-left: 3px;
+    margin-right: 60px;
     font-size: 25px;
+    margin-bottom: 60px;
 }
 
 .myButton {
@@ -91,9 +93,9 @@ p {
 	color: black;
 	font-family: "Jura";
     font-size:25px;
-    margin-left: 60px;
 	padding: 2px 9px;
-	text-decoration:none;
+    text-decoration:none;
+    margin-bottom: 60px;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
@@ -105,12 +107,73 @@ p {
 }
 
 
+.myButton2 {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color:#ffffff;
+    border-color: black;
+	border-radius:20px;
+	border:1px solid rgb(106, 106, 245);
+	display:inline-block;
+	cursor:pointer;
+	color: rgb(106, 106, 245);
+	font-family: "Jura";
+    font-size:20px;
+	padding: 2px 9px;
+    text-decoration:none;
+
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
 /* Results */
 
 .ResultsContainer {
-    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     width: 94vw;
-    margin-left: 60px;
-    height: 80vh;
-    border: 1px white solid;
+    min-height: 80vh;
+    border: 3px white solid;
+    padding-top: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.ResultsContainer .investorCard {
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: 3px black solid;
+    width: 25vw;
+    min-height: 35vh;
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+
+}
+
+.ResultsContainer .investorCard img {
+    border: black solid 3px;
+    border-radius: 70px;
+}
+
+
+.ResultsContainer .investorCard {
+    text-align: center;
+}
+
+.ResultsContainer .nameText {
+    font-size: 35px;
+}
+
+.Startup_Image {
+    border: black solid 3px;
+    border-radius: 50%;
+    height: 6;
 }

@@ -3,6 +3,7 @@
     <head>
         <title>Inventure Login Portal</title>
         <link rel="stylesheet" href="../css/login.css">
+        <script src="login.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -28,17 +29,36 @@
 
 
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top ">  
+        <a class="navbar-brand" href="index.html"><img src="../../images/inventureSMALL.png" alt="" id = "inventureSMALL" height="61px" width="212px"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+        <li class="nav-item">
+            <a class="nav-link" data-value="startUpPortal" href="../html/startupportal.html" target = "_blank" >Start Up Portal</a>        </li>  
+       <li class="nav-item">
+           <a class="nav-link " data-value="investorPortal" target = "_blank" href="investorportal.html">Investor Portal</a>    
+        </li>
+        <li class="nav-item"> 
+           <a class="nav-link " target = "_blank" data-value="login" href="login.html">Log in</a>         </li>   
+       </ul> 
+       </div></nav>
+    <!-- End of Navbar  -->
+
+
     <div class="body"></div>
-		<div class="grad"></div>
-		<div class="header">
-			<div>inventure<span></span></div>
+        <div class="grad"></div>
 		</div>
 		<br>
 		<div class="login">
 				<input type="text" placeholder="username" name="user" required><br>
 				<input type="password" placeholder="password" name="password" required><br>
-				<input type="button" value="Login">
-		</div>
+                <a href="startup.js"><input id="login_button" type="button" value="Login"></a>
+        </div>
+        <div id="logo">
+            <img src="/images/inventureSMALL.png" alt="Logo" style="width:320px; height:100px">
+        </div>
 </body>
 
 <script src="../js/login.js"></script>

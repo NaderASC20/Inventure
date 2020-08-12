@@ -11,6 +11,32 @@ body{
 	font-size: 12px;
 }
 
+nav {
+    height: 11vh;
+}
+
+p {
+    margin: 0
+
+}
+
+.navbar{ background: black; font-size: 25; max-height: 10vh;}
+
+.nav-link , .navbar-brand{ color: #ffffff; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: white; color: black; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background: white !important;}
+
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
 .body{
 	position: absolute;
 	top: -20px;
@@ -19,7 +45,7 @@ body{
 	bottom: -40px;
 	width: auto;
 	height: auto;
-	background-im;
+	background-color: black;
 	background-size: cover;
 	z-index: 0;
 }
@@ -40,7 +66,7 @@ body{
 .header{
 	position: absolute;
 	top: calc(50% - 35px);
-	left: calc(50% - 255px);
+	left: calc(50% - 160px);
 	z-index: 2;
 }
 
@@ -136,4 +162,13 @@ body{
 
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
+}
+#logo {
+	position: absolute;
+	top: 37%;
+	bottom: 50%;
+	right: 59%;
+	transform: translate(50%,50%);
+	margin-top: 2px;
+	
 }
