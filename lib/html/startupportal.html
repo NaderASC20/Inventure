@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Startup Portal</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/startup.css">
 
-        <link rel="apple-touch-icon" sizes="57x57" href="../../images/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="../../images/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../../images/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../../images/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../../images/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="../../images/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="../../images/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
+<head>
+    <title>Startup Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="../../images/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/startup.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
 
-        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
-    </head>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+</head>
 
 
 <body>
-<!-- navigation bar that slides down with the screen at the home page, Log in, Investor and Startup Portal -->
-<nav class="navbar navbar-expand-lg fixed-top ">  
-    <a class="navbar-brand" href="index.html"><img src="../../images/inventureSMALL.png" alt="" id = "inventureSMALL" height="61px" width="212px"></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
-    <li class="nav-item">
-        <a class="nav-link" data-value="startUpPortal" href="login.html" target = "_blank" >Start Up Portal</a>        </li>  
-<li class="nav-item">
-    <a class="nav-link " data-value="investorPortal" target = "_blank" href="login.html">Investor Portal</a>    
-    </li>
-    <li class="nav-item"> 
-    <a class="nav-link " target = "_blank" data-value="login" href="login.html">Log in</a>         </li>   
-</ul> 
-</div></nav>
-    
-<!-- Webpage Contents Start here -->
-<div class="portalContainer" id="portalContainerID">
-    <div class="portalText">
-        <p id="startup">Startup Portal</p>
-        <p id="whattype">What type of investors are you looking for?</p>
-    </div>
+    <!-- navigation bar that slides down with the screen at the home page, Log in, Investor and Startup Portal -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="index.html"><img src="../../images/inventureSMALL.png" alt="" id="inventureSMALL"
+                height="61px" width="212px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="startUpPortal" href="login.html" target="_blank">Start Up Portal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="investorPortal" target="_blank" href="login.html">Investor
+                        Portal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " target="_blank" data-value="login" href="login.html">Log in</a> </li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="buttons">
-        <div>
-        <input type="checkbox" id="Angel Investors" name="Angel Investors">
-        <label for="Angel Investors">Angel Investors</label>
-        </div>
-        <div>
-        <input type="checkbox" id="Venture Capitalists" name="Venture Capitalists">
-        <label for="Venture Capitalists">Venture Capitalists</label>
-        </div>
-        <div>
-        <input type="checkbox" id="Personal Investors" name="Personal Investors">
-        <label for="Personal Investors">Personal Investors</label>
+    <!-- Webpage Contents Start here -->
+    <div class="portalContainer" id="portalContainerID">
+        <div class="portalText">
+            <p id="startup">Startup Portal</p>
+            <p id="whattype">What type of investors are you looking for?</p>
         </div>
 
-        <div class="button">
-            <a href="#" id="submitButton" class="myButton"><strong>Submit</strong></a>
+        <div class="buttons">
+            <div>
+                <input type="checkbox" id="Angel Investors" name="Angel Investors">
+                <label for="Angel Investors">Angel Investors</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Venture Capitalists" name="Venture Capitalists">
+                <label for="Venture Capitalists">Venture Capitalists</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Personal Investors" name="Personal Investors">
+                <label for="Personal Investors">Personal Investors</label>
+            </div>
+
+            <div class="button">
+                <a href="#" id="submitButton" class="myButton"><strong>Submit</strong></a>
+            </div>
+
         </div>
 
-    </div>
-
-    <div id= "ResultsContainerID" class="ResultsContainer">
-         <!-- <div id="investorCardID" class="investorCard">
+        <div id="ResultsContainerID" class="ResultsContainer">
+            <!-- <div id="investorCardID" class="investorCard">
             <div id="nameTextDivID" class="nameTextDiv"><p class=nameText>John Shmoe</p></div>
             <div id="pictureTextContainerID" class="pictureTextContainer">
                 <div id="imgContainerID" class="imgContainer">
@@ -100,18 +108,24 @@
                     <a href="#" class="myButton2">Chat Now</a>    
                 </div>
             </div> -->
+            <!-- Investor Cards finished -->
 
-
-            <div id= "chatWindowID" class="chatWindow">
+            <!-- CHAT WINDOW -->
+            <div id="chatWindowID" class="chatWindow">
                 <div class="chatHeader">
-                     <div class="headshotContainer"><img id= "headshot" src="https://randomuser.me/api/portraits/med/men/75.jpg"></div> <!--GET USER IMG -->
-                     <div><p id=headerName class="headerName" style="font-size: 20px;" style="text-align: center;">Chat with John Smith</p></div>
-                     <div><img id="xButtonID" class="xButton" src="../../images/X SVG.svg"></div>
+                    <div class="headshotContainer"><img id="headshot"
+                            src="https://randomuser.me/api/portraits/med/men/75.jpg"></div>
+                    <!--GET USER IMG -->
+                    <div>
+                        <p id=headerName class="headerName" style="font-size: 20px;" style="text-align: center;">Chat
+                            with John Smith</p>
+                    </div>
+                    <div><img id="xButtonID" class="xButton" src="../../images/X SVG.svg"></div>
                 </div>
-        
+
                 <div class="messagingContainer">
-                    
-                    
+
+
                 </div>
 
                 <div class="inputBox" id="inputBoxID">
@@ -120,51 +134,50 @@
                 </div>
 
             </div>
-        
-            </div>
 
         </div>
-        </div>
-        <!-- Investor Cards finished -->
 
-<!-- CHAT WINDOW -->
-</div>
+    </div>
+    </div>
+    </div>
 
 
- 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
 
- <!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
     //  https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
 
-<!-- Your web app's Firebase configuration -->
-<script>
-    var firebaseConfig = {
-    apiKey: "AIzaSyDvCCxbkl8CJsmkIr8CtW8SODOvmjpl89o",
-    authDomain: "inventure-50eb3.firebaseapp.com",
-    databaseURL: "https://inventure-50eb3.firebaseio.com",
-    projectId: "inventure-50eb3",
-    storageBucket: "inventure-50eb3.appspot.com",
-    messagingSenderId: "614561427282",
-    appId: "1:614561427282:web:49f54f33ef4bf171cbd48b",
-    measurementId: "G-Q79NDC6QZG"
-  };
+    <!-- Your web app's Firebase configuration -->
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDvCCxbkl8CJsmkIr8CtW8SODOvmjpl89o",
+            authDomain: "inventure-50eb3.firebaseapp.com",
+            databaseURL: "https://inventure-50eb3.firebaseio.com",
+            projectId: "inventure-50eb3",
+            storageBucket: "inventure-50eb3.appspot.com",
+            messagingSenderId: "614561427282",
+            appId: "1:614561427282:web:49f54f33ef4bf171cbd48b",
+            measurementId: "G-Q79NDC6QZG"
+        };
 
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-  
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
 
 </body>
 
 
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
 <script src="../js/startup.js"></script>
 <script src="../js/chat.js"></script>
-</html>
 
+</html>

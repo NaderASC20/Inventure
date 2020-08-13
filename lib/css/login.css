@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
-body{
+body {
 	margin: 0;
 	padding: 0;
 	background: #fff;
@@ -12,32 +12,48 @@ body{
 }
 
 nav {
-    height: 11vh;
+	height: 11vh;
 }
 
 p {
-    margin: 0
-
+	margin: 0
 }
 
-.navbar{ background: black; font-size: 25; max-height: 10vh;}
-
-.nav-link , .navbar-brand{ color: #ffffff; cursor: pointer;}
-
-.nav-link{ margin-right: 1em !important;}
-
-.nav-link:hover{ background: white; color: black; }
-
-.navbar-collapse{ justify-content: flex-end;}
-
-.navbar-toggler{  background: white !important;}
-
-
-.navbar-collapse{
-    justify-content: flex-end;
+.navbar {
+	background: black;
+	font-size: 25;
+	max-height: 10vh;
 }
 
-.body{
+.nav-link,
+.navbar-brand {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.nav-link:hover {
+	background: white;
+	color: black;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.navbar-toggler {
+	background: white !important;
+}
+
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.body {
 	position: absolute;
 	top: -20px;
 	left: -20px;
@@ -50,7 +66,7 @@ p {
 	z-index: 0;
 }
 
-.grad{
+.grad {
 	position: absolute;
 	top: -20px;
 	left: -20px;
@@ -58,45 +74,46 @@ p {
 	bottom: -40px;
 	width: auto;
 	height: auto;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+	/* Chrome,Safari4+ */
 	z-index: 1;
 	opacity: 0.7;
 }
 
 .launch {
-    margin-left: 5%;
-    margin-right: 20vw;
-    text-align: center;
-    background-color: black;
-    width: 90%;
-    border-radius: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 3px solid white;
+	margin-left: 5%;
+	margin-right: 20vw;
+	text-align: center;
+	background-color: black;
+	width: 90%;
+	border-radius: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 3px solid white;
 	font-size: 10pxpx;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	margin-right: -60px;
 }
 
-.launch a{
-    color: white;
-    text-decoration: none;
+.launch a {
+	color: white;
+	text-decoration: none;
 }
 
-.launch a:hover{
-    text-decoration: none;
-    color: yellowgreen;
+.launch a:hover {
+	text-decoration: none;
+	color: yellowgreen;
 }
 
-.header{
+.header {
 	position: absolute;
 	top: calc(50% - 35px);
 	left: calc(50% - 160px);
 	z-index: 2;
 }
 
-.header div{
+.header div {
 	float: left;
 	color: #fff;
 	font-family: 'Exo', sans-serif;
@@ -104,11 +121,11 @@ p {
 	font-weight: 200;
 }
 
-.header div span{
+.header div span {
 	color: #5379fa !important;
 }
 
-.login{
+.login {
 	position: absolute;
 	top: calc(50% - 75px);
 	left: calc(50% - 50px);
@@ -118,11 +135,11 @@ p {
 	z-index: 2;
 }
 
-.login input[type=text]{
+.login input[type=text] {
 	width: 250px;
 	height: 30px;
 	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
+	border: 1px solid rgba(255, 255, 255, 0.6);
 	border-radius: 2px;
 	color: #fff;
 	font-family: 'Exo', sans-serif;
@@ -131,11 +148,11 @@ p {
 	padding: 4px;
 }
 
-.login input[type=password]{
+.login input[type=password] {
 	width: 250px;
 	height: 30px;
 	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
+	border: 1px solid rgba(255, 255, 255, 0.6);
 	border-radius: 2px;
 	color: #fff;
 	font-family: 'Exo', sans-serif;
@@ -145,7 +162,7 @@ p {
 	margin-top: 10px;
 }
 
-.login input[type=button]{
+.login input[type=button] {
 	width: 250px;
 	height: 35px;
 	background: white;
@@ -160,44 +177,40 @@ p {
 	margin-top: 10px;
 }
 
-.login input[type=button]:hover{
+.login input[type=button]:hover {
 	opacity: 0.8;
 }
 
-.login input[type=button]:active{
+.login input[type=button]:active {
 	opacity: 0.6;
 }
 
-.login input[type=text]:focus{
+.login input[type=text]:focus {
 	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
+	border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
-.login input[type=password]:focus{
+.login input[type=password]:focus {
 	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
+	border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
-.login input[type=button]:focus{
+.login input[type=button]:focus {
 	outline: none;
 }
 
-::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
+::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.6);
 }
 
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
+::-moz-input-placeholder {
+	color: rgba(255, 255, 255, 0.6);
 }
+
 #logo {
 	position: absolute;
 	font-size: 60px;
 	color: white;
 	top: calc(50% - 30px);
 	left: calc(50% - 200px);
-}
-
-.incorrectpass {
-	color: red;
-	margin-right: 140px;
 }

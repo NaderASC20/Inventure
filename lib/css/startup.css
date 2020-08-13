@@ -1,298 +1,314 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: block;
-    background-color: black;
-    color: white;
-    font-family: 'Jura', sans-serif;
-    margin-left: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body {
-    height: 100%;
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  background-color: black;
+  color: white;
+  font-family: 'Jura', sans-serif;
+  margin-left: 60px;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 nav {
-    height: 11vh;
+  height: 11vh;
 }
 
 p {
-    margin: 0
-
+  margin: 0;
 }
 
-.navbar{ background: black; font-size: 25; max-height: 10vh;}
-
-.nav-link , .navbar-brand{ color: #ffffff; cursor: pointer;}
-
-.nav-link{ margin-right: 1em !important;}
-
-.nav-link:hover{ background: white; color: black; }
-
-.navbar-collapse{ justify-content: flex-end;}
-
-.navbar-toggler{  background: white !important;}
-
-
-.navbar-collapse{
-    justify-content: flex-end;
+.navbar {
+  background: black;
+  font-size: 25;
+  max-height: 10vh;
 }
 
+.nav-link,
+.navbar-brand {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  background: white;
+  color: black;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background: white !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
 
 /* Website Contents */
 .portalContainer {
-    width: 100vw;
-    margin-top: 10vh;
+  width: 100vw;
+  margin-top: 10vh;
 }
 
 /* Title and Stuff */
-.portalText{
-    margin-top: 40px;
-    color: white;
+.portalText {
+  margin-top: 40px;
+  color: white;
 }
 
 .portalText #startup {
-    font-size: 85px;
+  font-size: 85px;
 }
 
 .portalText #whattype {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 /* Button stuff */
 .portalContainer .buttons {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    margin-left: 0px;
+  margin-left: 0px;
 }
 
-
-.portalContainer .buttons label{
-    margin-left: 3px;
-    margin-right: 60px;
-    font-size: 25px;
-    margin-bottom: 60px;
+.portalContainer .buttons label {
+  margin-left: 3px;
+  margin-right: 60px;
+  font-size: 25px;
+  margin-bottom: 60px;
 }
 
 .myButton {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-    background-color:#ffffff;
-    border-color: black;
-	border-radius:20px;
-	border:1px solid #000000;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-family: "Jura";
-    font-size:25px;
-	padding: 2px 9px;
-    text-decoration:none;
-    margin-bottom: 60px;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	background-color:#ffffff;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
+  border-color: black;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: 'Jura';
+  font-size: 25px;
+  padding: 2px 9px;
+  text-decoration: none;
+  margin-bottom: 60px;
 }
 
+.myButton:hover {
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
 
 .myButton2 {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-    background-color:#ffffff;
-    border-color: black;
-	border-radius:20px;
-	border:1px solid rgb(106, 106, 245);
-	display:inline-block;
-	cursor:pointer;
-	color: rgb(106, 106, 245);
-	font-family: "Jura";
-    font-size:20px;
-	padding: 2px 9px;
-    text-decoration:none;
-    margin-top: 10px;
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
+  border-color: black;
+  border-radius: 20px;
+  border: 1px solid rgb(106, 106, 245);
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(106, 106, 245);
+  font-family: 'Jura';
+  font-size: 20px;
+  padding: 2px 9px;
+  text-decoration: none;
+  margin-top: 10px;
+}
 
-}
 .myButton2:hover {
-	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	background-color:#ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+  background-color: #ffffff;
 }
+
 .myButton2:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 /* Results */
 
 .ResultsContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 94vw;
-    min-height: 60vh;
-    border: 3px white solid;
-    padding-top: 40px;
-    border-radius: 20px;
-    font-weight: bold;
-    margin-right: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 94vw;
+  min-height: 60vh;
+  border: 3px white solid;
+  padding-top: 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-right: 100px;
 }
 
 .ResultsContainer .investorCard {
-    border-radius: 20px;
-    background-color: whitesmoke;
-    border: 3px black solid;
-    width: 25vw;
-    min-height: 35vh;
-    color: black;
-    padding: 10px;
-    margin-bottom: 20px;
-    
-
+  border-radius: 20px;
+  background-color: whitesmoke;
+  border: 3px black solid;
+  width: 25vw;
+  min-height: 35vh;
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .ResultsContainer .investorCard img {
-    border: black solid 3px;
-    border-radius: 70px;
+  border: black solid 3px;
+  border-radius: 70px;
 }
 
-
 .ResultsContainer .investorCard {
-    text-align: center;
+  text-align: center;
 }
 
 .ResultsContainer .nameText {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .Startup_Image {
-    border: black solid 3px;
-    border-radius: 50%;
-    height: 6;
+  border: black solid 3px;
+  border-radius: 50%;
+  height: 6;
 }
 
 /* CHAT WINDOW CODE */
-.ResultsContainer *{
-    /* border: 1px red solid  */
+.ResultsContainer * {
+  /* border: 1px red solid  */
 }
+
 .chatWindow {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    width: 20vw;
-    min-height: 25vw;
-    background-color: white;
-    border: 3px white solid;
-    border-radius: 25px;
-    bottom: 0;
-    right: 0;
-    margin-right: 3vw;
-    margin-bottom: 10px;
-    padding: 0.4vw;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  width: 20vw;
+  min-height: 25vw;
+  background-color: white;
+  border: 3px white solid;
+  border-radius: 25px;
+  bottom: 0;
+  right: 0;
+  margin-right: 3vw;
+  margin-bottom: 10px;
+  padding: 0.4vw;
 }
 
 .chatWindow .headshotContainer {
-    width: inherit;
-    padding: 0.1vw;
+  width: inherit;
+  padding: 0.1vw;
 }
 
-.chatWindow img{
-    border-radius: 15px;
-    max-height: 6vh;
+.chatWindow img {
+  border-radius: 15px;
+  max-height: 6vh;
 }
+
 .chatWindow .chatHeader {
-    border-radius: 15px;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 0.4vw;
-    padding-right: 0.4vw;
-    padding-top: 0.2vw;
-    padding-bottom: 0.2vw;
-    flex-direction: row;
-    background-color: black;
-
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 0.4vw;
+  padding-right: 0.4vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
+  flex-direction: row;
+  background-color: black;
 }
 
-.chatWindow .chatHeader p{
-    text-align: center;
+.chatWindow .chatHeader p {
+  text-align: center;
 }
-.chatWindow *{
-    /* border: solid red 1px; */
+
+.chatWindow * {
+  /* border: solid red 1px; */
 }
 
 .chatWindow .messagingContainer {
-    display: flex;
-    flex-direction: column;
-    width: 19vw;
-    height: 37vh;
-    overflow-y: scroll;
-    font-size: 16px;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  width: 19vw;
+  height: 37vh;
+  overflow-y: scroll;
+  font-size: 16px;
+  color: white;
 }
 
-.chatWindow .messagingContainer p{
-    float: right;
-    background-color: black;
-    color: white;
-    padding: 0.3vw;
-    border-radius: 10px;
+.chatWindow .messagingContainer p {
+  float: right;
+  background-color: black;
+  color: white;
+  padding: 0.3vw;
+  border-radius: 10px;
 }
 
-.chatWindow .messagingContainer div{
-    padding: 0.2vw;
+.chatWindow .messagingContainer div {
+  padding: 0.2vw;
 }
 
 .chatWindow .inputBox {
-    display: flex;
-    align-items: center;
-    min-height: 5vh;
-    max-width: 20vw;
+  display: flex;
+  align-items: center;
+  min-height: 5vh;
+  max-width: 20vw;
 }
 
-.chatWindow .inputBox input{
-    border-radius: 10px;
-    max-height: 4vh;
-    width: 15vw;
-    background-color: rgb(161, 161, 161);
-    border: none;
-    outline: none;
-    color: black;
-    font-weight: bold   ;
-    font-size: 20px;
-    padding: .9vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0.2gti vw;
+.chatWindow .inputBox input {
+  border-radius: 10px;
+  max-height: 4vh;
+  width: 15vw;
+  background-color: rgb(161, 161, 161);
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0.9vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.2gti vw;
 }
 
-.chatWindow .inputBox button{
-    border-radius: 10px;
-    width: 6vw;
-    height: 4vh;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    background-color: cornflowerblue;
+.chatWindow .inputBox button {
+  border-radius: 10px;
+  width: 6vw;
+  height: 4vh;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background-color: cornflowerblue;
 }
 
 button {
-    transition-duration: 0.4s;
-  }
-  
+  transition-duration: 0.4s;
+}
+
 button:hover {
-    background-color: #4CAF50;
-    color: white;
-  }
+  background-color: #4caf50;
+  color: white;
+}
