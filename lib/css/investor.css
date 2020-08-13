@@ -188,7 +188,7 @@ nav {
 	top:1px;
 }
 
-.huge_box{
+.huge_box{           
   border: 3px solid whitesmoke;
   padding-top: 20px;
   border-radius: 3%;
@@ -197,7 +197,9 @@ nav {
 }
 
 .business_frame{
-  overflow-y: scroll;
+  border: solid 3px white;
+  border-radius: 25px;
+  width: 1200px;
 }
 
 .profileContainer {
@@ -231,13 +233,14 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 150px;
+  margin-top: 90px;
 }
 
   .center_container {
     position: relative;
     text-align: center;
     color: white;
+
   }
 
   .circle_developers{
@@ -252,6 +255,7 @@ nav {
 
   .polaroid {
     width: 40vw;
+    border-radius: 5%;
 
   }
 
@@ -259,17 +263,85 @@ nav {
     height: 460px;
   }
 .polaroidContainer {
-  width: 100%;
   height: 100%;
+  
 }
   .polaroidContainer {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: column !important;
     justify-content: space-evenly;
   }
 
-  h3{
+  h3 {
     text-align: center;
     font-size: 55px;
     margin-bottom: 5vh;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {box-sizing: border-box}
+
+    
+    /* Set height of body and the document to 100% */
+    body, html {
+      height: 10%;
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    /* Style tab links */
+    .tablink {
+      background-color:black;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+      overflow: hidden;
+    }
+    
+    .tablink:hover {
+      background-color: #777;
+    }
+    
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: black;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+      border:10px whitesmoke solid;
+      border-radius: 20px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      overflow: hidden; 
+      
+      /* Hide scrollbars */
+    }
+    
+    #Home {background-color:whitesmoke;}
+    #News {background-color:whitesmoke;}
+    #Contact {background-color:whitesmoke;}
+    #About {background-color: whitesmoke;}
+
+    body {margin:25px;}
+        
+    div.polaroid {
+
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+    }
+    
+    div.container {
+      text-align: center;
+      padding: 10px 20px;
+    }
+
+  

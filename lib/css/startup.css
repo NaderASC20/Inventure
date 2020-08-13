@@ -195,7 +195,7 @@ p {
     border-radius: 25px;
     bottom: 0;
     right: 0;
-    margin-right: 1vw;
+    margin-right: 3vw;
     margin-bottom: 10px;
     padding: 0.4vw;
 }
@@ -213,7 +213,7 @@ p {
     border-radius: 15px;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-left: 0.4vw;
     padding-right: 0.4vw;
@@ -222,6 +222,10 @@ p {
     flex-direction: row;
     background-color: black;
 
+}
+
+.chatWindow .chatHeader p{
+    text-align: center;
 }
 .chatWindow *{
     /* border: solid red 1px; */
@@ -238,10 +242,11 @@ p {
 }
 
 .chatWindow .messagingContainer p{
-    display: inline-block;
+    float: right;
     background-color: black;
     color: white;
-    padding: 0.3vw
+    padding: 0.3vw;
+    border-radius: 10px;
 }
 
 .chatWindow .messagingContainer div{
@@ -256,6 +261,7 @@ p {
 }
 
 .chatWindow .inputBox input{
+    border-radius: 10px;
     max-height: 4vh;
     width: 15vw;
     background-color: rgb(161, 161, 161);
@@ -269,9 +275,11 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: 0.2gti vw;
 }
 
 .chatWindow .inputBox button{
+    border-radius: 10px;
     width: 6vw;
     height: 4vh;
     text-decoration: none;
