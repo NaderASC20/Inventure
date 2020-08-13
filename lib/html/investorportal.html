@@ -40,10 +40,10 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
         <li class="nav-item">
-            <a class="nav-link" data-value="startUpPortal" href="../html/startupportal.html" target = "_blank" >Start Up Portal</a>        
+            <a class="nav-link" data-value="startUpPortal" href="login.html" target = "_blank" >Start Up Portal</a>        
         </li>  
     <li class="nav-item">
-        <a class="nav-link " data-value="investorPortal" target = "_blank" href="investorportal.html">Investor Portal</a>    
+        <a class="nav-link " data-value="investorPortal" target = "_blank" href="login.html">Investor Portal</a>    
     </li>
         <li class="nav-item"> 
         <a class="nav-link " target = "_blank" data-value="login" href="login.html">Log in</a>         
@@ -169,8 +169,7 @@
 
    <div class= "business_frame">
     <!-- <img  style="width:100%;height:500px; border: 3px solid white; width:100%; height:500px; border-radius: 2%;" src="https://cdn.vox-cdn.com/thumbor/Lf9aj9A_nn0uScv_yetBXFf8YAA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/10806197/2018_rebrand_blog_logo_LEAD_ART.jpg"> -->
-
-<div class="profileContainer">
+<div id="hideaway" style="display:block;">
 
 <img class="highResIMG" style="width:100%" src="../../images/Andela.png">
 <style>
@@ -195,6 +194,7 @@
       padding: 14px 16px;
       font-size: 17px;
       width: 25%;
+      overflow: hidden;
     }
     
     .tablink:hover {
@@ -206,7 +206,12 @@
       color: black;
       display: none;
       padding: 100px 20px;
-      height: 1100px;
+      height: 100%;
+      border:10px whitesmoke solid;
+      border-radius: 20px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      overflow: hidden; /* Hide scrollbars */
     }
     
     #Home {background-color:whitesmoke;}
@@ -236,7 +241,7 @@
         body {margin:25px;}
         
         div.polaroid {
-          width: 100%;
+
           background-color: white;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           margin-bottom: 25px;
@@ -250,7 +255,7 @@
         </head>
         <body>
         
-        
+        <div class="polaroidContainer">
         <div class="polaroid">
           <a href="https://andela.com/press/news-release/andela-to-double-engineering-talent-pool-with-pan-african-expansion/"><img  src="https://3xyh3sqxv063a8xzo5uk2zn1-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/press-release-1.png" alt="" style="width:100%"></a>
           <div class="container">
@@ -264,7 +269,7 @@
           <p>Preparing for What’s Next: Distributed Engineering Teams for Business Resilience</p>
           </div>
         </div>
-        
+    </div>
     </div>
     
     <div id="Contact" class="tabcontent">
@@ -285,9 +290,9 @@
       </div>
     </div>
     
-    <div id="About" style="font-size: 25px;" class="tabcontent" style="overflowy-y: scroll;">
+    <div id="About" style="font-size: 25px;" class="tabcontent" style="overflow: hidden;">
       <h3>About</h3>
-      <p>Andela was founded in 2014 by four professionals who were working in the online education and recruitment business. 
+      <p> Andela was founded in 2014 by four professionals who were working in the online education and recruitment business. 
           The founders, Ian Carnevale, Iyinoluwa Aboyeji, Jeremy Johnson (formerly of 2U), and Christina Sass, started Andela 
           as a training company to match developers in emerging markets not known as technology hubs with North American companies. 
           In June 2016, the company received funding from the Chan Zuckerberg Initiative. In 2017, Andela raised $40 million in Series C funding. 
@@ -333,12 +338,13 @@
     document.getElementById("defaultOpen").click();
     </script>
 </div>
-    </body>
+</div>
 
+    </body>
+<!-- nvm its hidden -->
 
 
 
 <script src="../js/investor.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
-

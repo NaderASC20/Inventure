@@ -95,6 +95,7 @@ nav {
     margin: 0;
     outline: none;
     border-top: none;
+
   }
   .dropdown-check-list ul.items li {
     list-style: none;
@@ -142,8 +143,8 @@ nav {
     height: 150px;
     border: 5px black solid; 
     border-radius: 100%;
-    
   }
+
 
 .contactInfo {
   text-align: center;
@@ -211,11 +212,10 @@ nav {
 }
 
 .highResIMG {
-  border-radius: 25px
-}
-
-#news {
-  border-radius: 25px;
+  border-radius: 22px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
 }
 
 .profileContainer img{
@@ -248,4 +248,28 @@ nav {
   .circle_desc{
     display:flex;
     justify-content: space-evenly;
+  }
+
+  .polaroid {
+    width: 40vw;
+
+  }
+
+.polaroid img {
+    height: 460px;
+  }
+.polaroidContainer {
+  width: 100%;
+  height: 100%;
+}
+  .polaroidContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+  }
+
+  h3{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 5vh;
   }

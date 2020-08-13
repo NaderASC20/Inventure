@@ -45,9 +45,9 @@
 </button>
 <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
     <li class="nav-item">
-        <a class="nav-link" data-value="startUpPortal" href="../html/startupportal.html" target = "_blank" >Start Up Portal</a>        </li>  
+        <a class="nav-link" data-value="startUpPortal" href="login.html" target = "_blank" >Start Up Portal</a>        </li>  
 <li class="nav-item">
-    <a class="nav-link " data-value="investorPortal" target = "_blank" href="investorportal.html">Investor Portal</a>    
+    <a class="nav-link " data-value="investorPortal" target = "_blank" href="login.html">Investor Portal</a>    
     </li>
     <li class="nav-item"> 
     <a class="nav-link " target = "_blank" data-value="login" href="login.html">Log in</a>         </li>   
@@ -104,8 +104,8 @@
 
             <div id= "chatWindowID" class="chatWindow">
                 <div class="chatHeader">
-                     <div class="headshotContainer"><img id= headshot src="https://randomuser.me/api/portraits/med/men/75.jpg"></div> <!--GET USER IMG -->
-                     <div><p id=Name class="headerName" style="font-size: 20px;" style="text-align: center;">Chat with John Smith</p></div>
+                     <div class="headshotContainer"><img id= "headshot" src="https://randomuser.me/api/portraits/med/men/75.jpg"></div> <!--GET USER IMG -->
+                     <div><p id=headerName class="headerName" style="font-size: 20px;" style="text-align: center;">Chat with John Smith</p></div>
                      <div><img id="xButtonID" class="xButton" src="../../images/X SVG.svg"></div>
                 </div>
         
@@ -114,9 +114,9 @@
                     
                 </div>
 
-                <div class="inputBox">
-                    <input type="text" placeholder="message">
-                    <button id="submitButton" style="font-size: 20px;">send</button>
+                <div class="inputBox" id="inputBoxID">
+                    <input id="inputBoxInput" type="text" placeholder="message">
+                    <button id="sendButton" style="font-size: 20px;">send</button>
                 </div>
 
             </div>
