@@ -1,18 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  display: block;
-  background-color: white;
-  color: black;
-  font-family: 'Jura', sans-serif;
-}
-
 nav {
   height: 8vh;
 }
@@ -34,7 +19,7 @@ nav {
 }
 
 #inventureSmall {
-  size: 70%;
+  size: 40%;
 }
 
 .nav-link {
@@ -68,6 +53,22 @@ html {
   height: 0px;
   border: 1px solid #cecece;
 }
+
+.informationContainer {
+  margin-top: 11vh;
+}
+.missionContainer {
+  height: 38.87vh;
+  width: 100vw;
+  text-align: center;
+}
+.title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 86px;
+}
 html {
   background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a);
   height: 100%;
@@ -77,6 +78,7 @@ html {
 
 
 body {
+  text-align: ;
 
 }
 
@@ -84,7 +86,7 @@ body {
   text-align: center;
 }
 
-}/* * {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
