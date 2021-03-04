@@ -8,6 +8,92 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   display: block;
+  background-color: white;
+  color: black;
+  font-family: 'Jura', sans-serif;
+}
+
+nav {
+  height: 8vh;
+}
+
+.navbar navbar-expand-lg fixed-top {
+  height: 7vh;
+}
+
+.navbar {
+  background: white;
+  font-size: 24;
+  max-height: 10vh;
+}
+
+.nav-link,
+.navbar-brand {
+  color: black;
+  cursor: pointer;
+}
+
+#inventureSmall {
+  size: 70%;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  background: black;
+  color: white;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background: black !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navDivider {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  border: 1px solid #cecece;
+}
+html {
+  background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a);
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body {
+
+}
+
+.header1{
+  text-align: center;
+}
+
+}/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
   background-color: black;
   color: white;
   font-family: 'Jura', sans-serif;
@@ -61,13 +147,13 @@ p {
 }
 
 /* Website Contents */
-.portalContainer {
+/* .portalContainer {
   width: 100vw;
   margin-top: 10vh;
 }
 
 /* Title and Stuff */
-.portalText {
+/* .portalText {
   margin-top: 40px;
   color: white;
 }
@@ -81,7 +167,7 @@ p {
 }
 
 /* Button stuff */
-.portalContainer .buttons {
+/* .portalContainer .buttons {
   margin-top: 5px;
   display: flex;
   flex-direction: row;
@@ -151,7 +237,7 @@ p {
 
 /* Results */
 
-.ResultsContainer {
+/* .ResultsContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -162,9 +248,9 @@ p {
   border-radius: 20px;
   font-weight: bold;
   margin-right: 100px;
-}
+} */
 
-.ResultsContainer .investorCard {
+/* .ResultsContainer .investorCard {
   border-radius: 20px;
   background-color: whitesmoke;
   border: 3px black solid;
@@ -195,9 +281,9 @@ p {
 }
 
 /* CHAT WINDOW CODE */
-.ResultsContainer * {
+/* .ResultsContainer * {
   /* border: 1px red solid  */
-}
+/* }
 
 .chatWindow {
   display: none;
@@ -223,9 +309,9 @@ p {
 .chatWindow img {
   border-radius: 15px;
   max-height: 6vh;
-}
+} */
 
-.chatWindow .chatHeader {
+/* .chatWindow .chatHeader {
   border-radius: 15px;
   color: white;
   display: flex;
@@ -243,11 +329,11 @@ p {
   text-align: center;
 }
 
-.chatWindow * {
+.chatWindow * { */
   /* border: solid red 1px; */
-}
+/* } */ 
 
-.chatWindow .messagingContainer {
+/* .chatWindow .messagingContainer {
   display: flex;
   flex-direction: column;
   width: 19vw;
@@ -263,9 +349,9 @@ p {
   color: white;
   padding: 0.3vw;
   border-radius: 10px;
-}
+} */
 
-.chatWindow .messagingContainer div {
+/* .chatWindow .messagingContainer div {
   padding: 0.2vw;
 }
 
@@ -292,9 +378,9 @@ p {
   align-items: center;
   justify-content: center;
   margin-right: 0.2gti vw;
-}
+} */
 
-.chatWindow .inputBox button {
+/* .chatWindow .inputBox button {
   border-radius: 10px;
   width: 6vw;
   height: 4vh;
@@ -306,9 +392,9 @@ p {
 
 button {
   transition-duration: 0.4s;
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: #4caf50;
   color: white;
-}
+} */ 

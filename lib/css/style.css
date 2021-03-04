@@ -8,25 +8,33 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     display: block;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Jura', sans-serif;
 }
 
 nav {
-    height: 11vh;
+    height: 8vh;
+}
+
+.navbar navbar-expand-lg fixed-top {
+    height: 7vh;
 }
 
 .navbar {
-    background: black;
-    font-size: 25;
+    background: white;
+    font-size: 24;
     max-height: 10vh;
 }
 
 .nav-link,
 .navbar-brand {
-    color: #ffffff;
+    color: black;
     cursor: pointer;
+}
+
+#inventureSmall {
+    size: 40%;
 }
 
 .nav-link {
@@ -34,8 +42,8 @@ nav {
 }
 
 .nav-link:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
 }
 
 .navbar-collapse {
@@ -43,237 +51,117 @@ nav {
 }
 
 .navbar-toggler {
-    background: white !important;
+    background: black !important;
 }
-
 
 .navbar-collapse {
     justify-content: flex-end;
 }
 
-#biglogo {
-    max-width: 50%;
-    max-height: 50%;
-}
-
-.logoslide {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10vh;
-    height: 90vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.missionSlide {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    display: block;
-    width: 100vw;
-    height: 1316.5px;
-}
-
-.subtitleContainer {
-    text-align: center;
-    width: 1000px;
-    margin-bottom: 15vh;
-}
-
-#layoverBox {
-    position: absolute;
-    z-index: 0;
-    width: 100vw;
-    height: 1316.5px;
-    background-color: #000000;
-    opacity: .66;
-}
-
-.textcontainer {
-    position: absolute;
-    text-align: center;
-    z-index: 2;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#plantpic {
-    overflow-x: hidden;
-    position: absolute;
-    z-index: -1;
-    width: 1975px;
-}
-
-#mission {
-    font-size: 80;
-}
-
-#missionstatement {
-    font-size: 35;
-}
-
-.textcontainer {
-    width: 80vw;
-}
-
-.overimg {
-    font-size: 50;
-}
-
-.slide3Container {
-    display: block;
-    overflow-y: hidden;
-    min-height: 120%;
-    width: 100vw;
-
-}
-
-.imagesContainer {
-    width: 100vw;
-    min-height: 120%;
-    display: flex;
-    flex-direction: row;
-}
-
-.forStartup {
-    position: relative;
-    display: inline-block;
-    min-height: 120%;
-    width: 50vw;
-}
-
-.forInvestors {
-    position: relative;
-    display: block;
-    min-height: 120%;
-    width: 50vw;
-}
-
-.layoverBoxStartup {
-    position: absolute;
-    z-index: 0;
-    width: 50vw;
-    min-height: 120%;
-    background-color: #000000;
-    opacity: .66;
-}
-
-.layoverBoxInvestor {
-    position: absolute;
-    z-index: 0;
-    width: 50vw;
-    min-height: 120%;
-    background-color: #000000;
-    opacity: .66;
-}
-
-.textcontainer2 {
-    position: absolute;
-    text-align: center;
-    z-index: 2;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 95;
-    line-height: 1;
-}
-
-span {
-    font-size: 50;
-}
-
-.textcontainer4 {
-    position: absolute;
-    text-align: center;
-    z-index: 2;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 95;
-    line-height: 1;
-}
-
-
-#startup {
-    z-index: -1;
-    position: absolute;
-    max-width: 50vw;
-
-}
-
-#investor {
-    z-index: -1;
-    position: absolute;
-    max-width: 50vw;
-}
-
-
-.learnContainer {
-    position: relative;
-}
-
-.learn_more_box {
-    border-radius: 30px;
-    z-index: 2;
-    bottom: 10px;
-    width: 50%;
-
-
-}
-
-.descTextContainer {
-    position: absolute;
-    text-align: center;
-    z-index: 2;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1;
-    width: 40vw;
-    margin-top: 94px;
-}
-
-
-.descText {
-    z-index: 2;
-    font-size: 40;
-}
-
-
-
 html {
     scroll-behavior: smooth;
 }
 
+.navDivider {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #cecece;
+}
 
-.launch {
-    margin-left: 5%;
-    margin-right: 20vw;
+.informationContainer {
+    margin-top: 11vh;
+}
+.missionContainer {
+    height: 38.87vh;
+    width: 100vw;
     text-align: center;
-    background-color: black;
-    width: 90%;
-    border-radius: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    border: 3px solid white;
-    font-size: 35px;
-    padding: 9px;
-    padding-left: 14px;
-    padding-right: 14px;
+}
+.title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 86px;
 }
 
-.launch a {
+p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.missionDesc {
+    width: 675px;
+    height: 225px;
+    text-align: center;
+    margin: auto;
+}
+/* .pictureContainer {
+    margin-top: 11vh;
+    width: 100%;
+    height: 34.1%;
+    position: absolute;
+    background: url(../../images/H_people.png);
+} */
+
+.pictureContainer .logoDiv {
+    background-image: url(../../images/inventureWhiteLogo.svg);
+}
+
+.forStartupsContainer {
+    text-align: center;
+    width: 683px;
+    height: 500px;
+    margin-left: 10vw;
+    margin-top: 3vh;
+}
+
+.forStartupsContainer .button {
+    margin-top: 5vh;
+    background: #47a7ee;
+    border-radius: 35px;
+    border: none;
+    padding: 10px;
     color: white;
-    text-decoration: none;
+    font-size: 36px;
 }
 
-.launch a:hover {
-    text-decoration: none;
-    color: yellowgreen;
+.forInvestorsContainer .missionDesc p {
+    margin-bottom: 4vh;
+}
+.forInvestorsContainer {
+    text-align: center;
+    width: 683px;
+    height: 500px;
+    margin-right: 10vw;
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+.forInvestorsContainer .button {
+    margin-top: 20vh;
+    background: #47a7ee;
+    border-radius: 35px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 36px;
+}
+
+.startupInvestorContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forStartupsContainer img {
+    margin-top: 4vh;
+}
+
+.forInvestorsContainer img {
+    margin-top: 4vh;
 }
