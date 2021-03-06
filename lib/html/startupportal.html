@@ -12,7 +12,6 @@
     sizes="192x192"
     href="../../images/android-icon-192x192.png"
 />
-<link rel="manifest" href="/manifest.json" />
 <meta name="msapplication-TileColor" content="#ffffff" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,7 +22,6 @@
         name="msapplication-TileImage"
         content="../../images/ms-icon-144x144.png"
     />
-    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
 </head>
 
 
@@ -85,110 +83,43 @@
         </div>
     </nav>
 
-    <div class="navDivider"></div>
-
-    <div class = "body_rect">
-        <div class="font">
-
-            <div class="font">
-        
-               
-    <div class="tabs">
+    <div class="startup-container">
+        <div class="tab-container">
+            <ul>
+                <li>
+                    <a class="trending" id="trending">trending</a>
+                </li>
     
-        <input type="radio" id="tab1" name="tab-control" checked>
-        <input type="radio" id="tab2" name="tab-control">
-        <input type="radio" id="tab3" name="tab-control">  
-        <!-- <input type="radio" id="tab4" name="tab-control"> -->
-        <ul>
-            <li title="tab 1"><label for="tab1" role="button"><span>Trending</span></label></li>
-            <li title="tab 2"><label for="tab2" role="button"><span>Search</span></label></li>
-            <li title="tab 3"><label for="tab3" role="button"><span>Following</span></label></li>
-            <!-- <li title="tab 4"><label for="tab4" role="button"><span>Tab 4</span></label></li> -->
-        </ul>
+                <li>
+                    <a class="search" id="search">search</a>
+                </li>
+    
+                <li>
+                    <a class="following" id="following">following</a>
+                </li>
+            </ul>
+        </div>
 
-        <div class="content">
-            <section>
-                <span class="likebtn-wrapper" data-theme="review" data-ef_voting="heartbeat" data-white_label="true" data-identifier="item_1" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_disabled="true" data-tooltip_enabled="false" data-i18n_after_like="Loved" data-i18n_like_tooltip="I love this" data-i18n_unlike_tooltip="Unlove"></span>
-                <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-            <h2>Tab 1 content</h2>
-
-            <div class="header1">
-                <img
-                    id="headerimg1"
-                    src="https://wallpaperaccess.com/full/3734602.jpg"
-                    alt="Header 1 Img "
-                    height="423"
-                />
-                
-                <h1 style="margin-top: 3%;">Header 1</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                </p>
-                
-                <button class="button1">Read More</button>
-                
+        <div class="meat-container">
+            <div class = "trending-container">
+                <div class="trending-wrapper"></div>
             </div>
-
-            <div class="header2">
-                <img
-                    id="headerimg2"
-                    src="https://wallpaperaccess.com/full/3734602.jpg"
-                    alt="Header 2 Img "
-                    height="423"
-                />
-                <h1 style="margin-top: 3%;">Header 2</h1>
-                
-    <style type="text/css">
-/* /* #box1 {
-    height: 300px;
-    width: 250px;
-    background-color: #FF0;
-    float: right; */
-</style>
-</body> 
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                </p>
-
-                <button class="button2">Read More</button>
+    
+            <div class = "search-container">
+                <div class="search-wrapper"></div>
             </div>
+    
+            <div class = "following-container">
+                <div class="following-wrapper"></div>
+            </div>
+        </div>
+    </div>
+    
+    
                 
-            </section>
+           
 
-            <section>
-
-                <div class="grid">         
+                 <!-- <div class="grid">         
                     <div id="box1" class="box1"></div>
                     <div id="box2" class="box2"></div>
                     <div id="box3" class="box3"></div>
@@ -198,5 +129,9 @@
                     <div id="box7" class="box7"></div>
                     <div id="box8" class="box8"></div>
                     <div id="box9" class="box9"></div>
-                    <div class="font">
-                </ul>
+                    <div class="font"> -->
+
+<script src="../js/startup.js"></script>
+</body> 
+</html>
+                

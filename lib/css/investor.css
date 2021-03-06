@@ -508,3 +508,42 @@ body.modal-open .supreme-container {
     -ms-filter: blur(1px);
     filter: blur(1px);
 }
+
+.w3-black, .w3-hover-black:hover {
+    color: rgb(0, 26, 255)!important;
+    /* background-color: #000!important; */
+}
+/* Collapsible */
+.collapsible{
+    background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .content1 {
+    padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  }
+   
+  /* Collapsible */
+
+
+
+
+
+
+
+
+  
