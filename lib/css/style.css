@@ -80,8 +80,8 @@ nav {
 }
 
 .nav-link:hover {
-    background: black;
-    color: white;
+    background: white;
+    color: #47a7ee;
 }
 
 .navbar-collapse {
