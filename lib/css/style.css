@@ -58,15 +58,17 @@ nav {
 }
 
 .navbar {
-    background: white;
+    background: #47a7ee;
     font-size: 24;
     max-height: 10vh;
 }
 
 .nav-link,
 .navbar-brand {
-    color: black;
+    color: white;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
 }
 
 #inventureSmall {
@@ -112,6 +114,7 @@ html {
     height: 38.87vh;
     width: 100vw;
     text-align: center;
+    margin-top: 11vh;
 }
 .title {
     font-family: 'Lato';
