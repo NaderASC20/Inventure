@@ -94,8 +94,8 @@ body {
   
 } */
 
-.grid {
-  display: flex;        
+ /* .grid {
+  display: -webkit-flex;       
   flex-wrap: wrap;      
   justify-content: space-evenly;
 }
@@ -107,8 +107,8 @@ body {
   background-color: rgba(196, 196, 196, 0.24);
   padding: 10px;
   border-radius: 68px;
-  margin: 2px;
-}
+  margin: 10px;
+} */
 
 
 
@@ -370,5 +370,70 @@ to {
 
 /* ------------------------END OF TAB CSS---------------------------------------------------------- */
 
+  
+.box1 {
+  height: 501px;
+  width: 341px;
+  background-color: white;
+  border-radius: 68px;
 
+  margin-left: 20px;
+}
+.box1 {
+  height: 501px;
+  width: 341px;
+  background-color:rgba(196,196,196,0.24);
+  border-radius: 68px;
+  float: right;
+  margin-left: 20px;
+}
+
+.box2, .box3 {
+  height: 501px;
+  width: 341px;
+  background-color: rgba(196,196,196,0.24);
+  border-radius: 68px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  }
+
+/* .box4 {
+  height: 501px;
+  width: 341px;
+  background-color: rgba(196,196,196,0.24);
+  border-radius: 68px;
+  
+  margin-right: 40px;
+  margin-bottom: 100px;
+  }
+
+  .box5, .box6 {
+    height: 501px;
+    width: 341px;
+    background-color: rgba(196,196,196,0.24);
+    border-radius: 68px;
+   
+    margin-right: 40px;
+    margin-bottom: 100px;
+    }
+
+    .box7 {
+      height: 501px;
+      width: 341px;
+      background-color: rgba(196,196,196,0.24);
+      border-radius: 68px;
+      
+      margin-right: 40px;
+      margin-bottom: 100px;
+      }
+
+      .box8, .box9 {
+        height: 501px;
+        width: 341px;
+        background-color: white;
+        border-radius: 68px;
+       
+        margin-right: 40px;
+        margin-bottom: 100px;
+        } */
 
