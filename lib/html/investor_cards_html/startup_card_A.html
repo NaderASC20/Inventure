@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+<div class="tabs">
+    <div class="tab-header">
+      <div class="active">
+        <i class="fa fa-code"></i> Home
+      </div>
+      <div>
+        <i class="fa fa-pencil-square-o"></i> Data
+      </div>
+      <div>
+        <i class="fa fa-bar-chart"></i> Funding
+      </div>
+      <div>
+        <i class="fa fa-envelope-o"></i> News
+      </div>
+      <div>
+        <i class="fa fa-envelope-o"></i> about
+      </div>
+    </div>
+
+    <div class="tab-indicator"></div>
+    <div class="tab-body">
+      <div class="active">
+        <h2>This is code section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error neque saepe commodi blanditiis fugiat nisi aliquam ratione porro quibusdam in, eveniet accusantium cumque. Dolore officia reprehenderit perferendis quod libero omnis.</p>
+      </div>
+      <div>
+        <h2>This is about section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+      </div>
+      <div>
+        <h2>This is services section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+      </div>
+      <div>
+        <h2>This is contact section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+      body {
+  background:#ddd;
+  font-family:"Raleway";
+}
+.tabs {
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:80%;
+  height:max-content;
+  background:#f5f5f5;
+  padding:20px 30px;
+  overflow:hidden;
+  border-radius:50px;
+  box-shadow:5px 10px 5px #ccc;
+}
+.tabs .tab-header {
+  height:60px;
+  display:flex;
+  align-items:center;
+}
+.tabs .tab-header > div {
+  width:calc(100% / 4);
+  text-align:center;
+  color:#888;
+  font-weight:600;
+  cursor:pointer;
+  font-size:14px;
+  text-transform:uppercase;
+  outline:none;
+}
+.tabs .tab-header > div > i {
+  display:block;
+  margin-bottom:5px;
+}
+.tabs .tab-header > div.active {
+  color:#00acee;
+}
+.tabs .tab-indicator {
+  position:relative;
+  width:calc(100% / 4);
+  height:5px;
+  background:#00acee;
+  left:0px;
+  border-radius:5px;
+  transition:all 500ms ease-in-out;
+}
+.tabs .tab-body {
+  position:relative;
+  height:calc(100% - 60px);
+  padding:10px 5px;
+}
+.tabs .tab-body > div {
+  position:absolute;
+  top:-200%;
+  opacity:0;
+  transform:scale(0.9);
+  transition:opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
+}
+.tabs .tab-body > div.active {
+  top:0px;
+  opacity:1;
+  transform:scale(1);
+}
+              
+  </style>
+
+  <script>
+    let tabHeader = document.getElementsByClassName("tab-header")[0];
+    let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+    let tabBody = document.getElementsByClassName("tab-body")[0];
+
+    let tabsPane = tabHeader.getElementsByTagName("div");
+
+    for(let i=0;i<tabsPane.length;i++){
+    tabsPane[i].addEventListener("click",function(){
+        tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+        tabsPane[i].classList.add("active");
+        tabBody.getElementsByClassName("active")[0].classList.remove("active");
+        tabBody.getElementsByTagName("div")[i].classList.add("active");
+        
+        tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
+    });
+    }
+  </script>
+</body>
+</html>

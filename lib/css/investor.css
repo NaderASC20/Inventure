@@ -514,7 +514,7 @@ body.modal-open .supreme-container {
 }
 /* ----------------------------------------------------------------------Collapsible ------------------------------------------------------------------------------------------------------*/
 .collapsible{
-    background-image: url('https://d3o1wlpkmt4nt9.cloudfront.net/wp-content/uploads/2018/01/02102541/startup-stock-options-1a-min.jpg');
+  background-image: url('https://d3o1wlpkmt4nt9.cloudfront.net/wp-content/uploads/2018/01/02102541/startup-stock-options-1a-min.jpg');
   /* color: white; */
   cursor: pointer;
   padding: 55px;
@@ -531,8 +531,8 @@ body.modal-open .supreme-container {
     background-color: #555;
   } */
 
-  .content1 {
-    padding: 0 18px;
+.content1 {
+  padding: 0 18px;
   display: none;
   overflow: hidden;
   text-align: center;
