@@ -2,6 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    padding-bottom: 90px;
+}
+
+.divider {
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgb(48, 49, 51),
+        transparent
+    );
 }
 
 body {
@@ -14,7 +50,7 @@ body {
 }
 
 nav {
-    height: 8vh;
+    height: 7vh;
 }
 
 .navbar navbar-expand-lg fixed-top {
@@ -70,7 +106,7 @@ html {
 }
 
 .informationContainer {
-    margin-top: 11vh;
+    margin-top: 7vh;
 }
 .missionContainer {
     height: 38.87vh;
@@ -81,16 +117,16 @@ html {
     font-family: 'Lato';
     font-style: normal;
     font-weight: normal;
-    font-size: 72px;
-    line-height: 86px;
+    font-size: 48px;
+    line-height: 60px;
 }
 
 p {
     font-family: 'Lato';
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -100,13 +136,6 @@ p {
     text-align: center;
     margin: auto;
 }
-/* .pictureContainer {
-    margin-top: 11vh;
-    width: 100%;
-    height: 34.1%;
-    position: absolute;
-    background: url(../../images/H_people.png);
-} */
 
 .pictureContainer .logoDiv {
     background-image: url(../../images/inventureWhiteLogo.svg);
@@ -115,19 +144,22 @@ p {
 .forStartupsContainer {
     text-align: center;
     width: 683px;
-    height: 500px;
+    height: 440px;
     margin-left: 10vw;
-    margin-top: 3vh;
 }
 
-.forStartupsContainer .button {
-    margin-top: 5vh;
+.startupInvestorContainer a {
     background: #47a7ee;
     border-radius: 35px;
     border: none;
-    padding: 10px;
+    padding: 14px;
     color: white;
     font-size: 36px;
+    text-decoration: none;
+}
+
+.startupInvestorContainer a:hover {
+    border: 2px solid black;
 }
 
 .forInvestorsContainer .missionDesc p {
@@ -136,20 +168,9 @@ p {
 .forInvestorsContainer {
     text-align: center;
     width: 683px;
-    height: 500px;
+    height: 440px;
     margin-right: 10vw;
-    margin-top: 3vh;
     margin-left: 5vw;
-}
-
-.forInvestorsContainer .button {
-    margin-top: 20vh;
-    background: #47a7ee;
-    border-radius: 35px;
-    border: none;
-    padding: 10px;
-    color: white;
-    font-size: 36px;
 }
 
 .startupInvestorContainer {
@@ -159,9 +180,120 @@ p {
 }
 
 .forStartupsContainer img {
-    margin-top: 4vh;
+    width: 30%;
+    height: 30%;
 }
 
 .forInvestorsContainer img {
-    margin-top: 4vh;
+    width: 30%;
+    height: 30%;
+}
+
+.startupFundingContainer {
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+}
+
+.startupFundingWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundingDesc {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 40vw;
+    height: 225px;
+    text-align: center;
+    margin: auto;
+}
+
+.fundingDesc p {
+    margin-left: 4vw;
+    margin-top: 3vh;
+}
+
+.footerContainer {
+    margin-top: 6vh;
+    background-color: #47a7ee;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonsContainer {
+    position: absolute;
+}
+.buttonsContainer ul {
+    width: 100vw;
+    margin-top: 5vh;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buttonsContainer ul a {
+    color: rgb(255, 255, 255);
+    padding: 0.5vw;
+}
+
+.buttonsContainer ul a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Lato';
+    font-size: 24;
+}
+
+.buttonsContainer ul a:hover {
+    font-family: 'Lato';
+    font-size: 24;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.buttonsContainer .divider {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.buttonsContainer .div-transparent:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgb(255, 255, 255),
+        transparent
+    );
+}
+
+.footerContainer .moreInfoContainer {
+    text-align: center;
+}
+
+.footerContainer .moreInfoContainer {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato';
+    font-size: 18;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
 }
