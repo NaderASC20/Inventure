@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+    <head class="supreme-container">
         <title>Investor Portal</title>
         <meta charset="utf-8" />
         <meta
@@ -32,9 +32,110 @@
             href="https://fonts.googleapis.com/css2?family=Jura&display=swap"
             rel="stylesheet"
         />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .city {display:none}
+        </style>
+
+        <script src="../js/investor.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
     </head>
 
-    <body>
+    <body> 
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+             <header class="w3-container w3-blue"> 
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+              <h2>Header</h2>
+             </header>
+           
+             <div class="w3-bar w3-border-bottom">
+              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button>
+              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button>
+              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+             </div>
+           
+             <div id="London" class="w3-container city">
+              <h1>London</h1>
+              <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
+           
+             <div id="Paris" class="w3-container city">
+              <h1>Paris</h1>
+              <p>Paris is the capital of France.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+             </div>
+           
+             <div id="Tokyo" class="w3-container city">
+              <h1>Tokyo</h1>
+              <p>Tokyo is the capital of Japan.</p><br>
+             </div>
+           
+             <div class="w3-container w3-light-grey w3-padding">
+              <button class="w3-button w3-right w3-white w3-border" 
+              onclick="document.getElementById('id01').style.display='none'">Close</button>
+             </div>
+            </div>
+           </div>
+           
+           </div>
+        
+    <div class="supreme-container">
+        <p style="font-size: 35px; text-align: center; color: black; margin-top: 10%;">
+            
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/image.jpg" alt="" id="inventureSMALL" style="height: 40px;"/>
+                <img src="/images/InkedinventureSMALL_LI.jpg" style="height: 30px; margin-top: 5px; margin-left: 15px;"/>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-4">
+                    <li class="nav-item">
+                        <a
+                            style="font-size: large;"
+                            class="nav-link"
+                            data-value="startUpPortal"
+                            href="login.html"
+                            target="_blank"
+                            >Start Up Portal</a
+                        >
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            style="font-size: large;"
+                            class="nav-link"
+                            target="_blank"
+                            data-value="login"
+                            href="login.html"
+                            >Log out</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="navDivider"></div>
 
         <div>
             <p style="font-size: 35px; text-align: center; color: white; margin-top: 1%;">
@@ -42,92 +143,273 @@
             </p>
         </div>
 
-        <div class = "body_rect">
         <div class="font">
+        
+            <div class="tabs">
+            
+                <input type="radio" id="tab1" name="tab-control" checked>
+                <input type="radio" id="tab2" name="tab-control">
+                <input type="radio" id="tab3" name="tab-control">  
+                <!-- <input type="radio" id="tab4" name="tab-control"> -->
+                <ul>
+                    <li title="tab 1"><label for="tab1" role="button"><span>Trending</span></label></li>
+                    <li title="tab 2"><label for="tab2" role="button"><span>Search</span></label></li>
+                    <li title="tab 3"><label for="tab3" role="button"><span>Following</span></label></li>
+                    <!-- <li title="tab 4"><label for="tab4" role="button"><span>Tab 4</span></label></li> -->
+                </ul>
 
-            <div class="header1">
-                <img
-                    id="headerimg1"
-                    src="https://wallpaperaccess.com/full/3734602.jpg"
-                    alt="Header 1 Img "
-                    height="423"
-                />
+                <div class="content">
+                    <section>
+                        <span class="likebtn-wrapper" data-theme="review" data-ef_voting="heartbeat" data-white_label="true" data-identifier="item_1" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_disabled="true" data-tooltip_enabled="false" data-i18n_after_like="Loved" data-i18n_like_tooltip="I love this" data-i18n_unlike_tooltip="Unlove"></span>
+                        <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+                    <h2>Tab 1 content</h2>
+
+                    <div class="header1">
+                        <img
+                            id="headerimg1"
+                            src="https://wallpaperaccess.com/full/3734602.jpg"
+                            alt="Header 1 Img "
+                            height="423"
+                        />
+                        
+                        <h1 style="margin-top: 3%;">Header 1</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+                        
+                        <button class="button1">Read More</button>
+                        
+                    </div>
+
+                    <div class="header2">
+                        <img
+                            id="headerimg2"
+                            src="https://wallpaperaccess.com/full/3734602.jpg"
+                            alt="Header 2 Img "
+                            height="423"
+                        />
+                        <h1 style="margin-top: 3%;">Header 2</h1>
+                        
+        
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+        
+                        <button class="button2">Read More</button>
+                    </div>
+                        
+                    </section>
+
+                    <section>
+
+                        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+                        <ul id="myMenu">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">SQL</a></li>
+                            <li><a href="#">Bootstrap</a></li>
+                            <li><a href="#">Node.js</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h1>Tab 2 content</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.
+                    </p>
+
+            
+                    
+                        
+                        <!-- <div class="w3-container">
+                            <h1>Modal Tabs</h >
+                            <p>In this example we add tabbed content inside the modal.</p>
+                        </div>
+
+                        <button onclick="open_model_id_01()" class="w3-button w3-black">Open Tabbed Modal</button>
+                        
+                        <script>
+                        document.getElementsByClassName("tablink")[0].click();
+                        
+                        function openCity(evt, cityName) {
+                          var i, x, tablinks;
+                          x = document.getElementsByClassName("city");
+                          for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                          }
+                          tablinks = document.getElementsByClassName("tablink");
+                          for (i = 0; i < x.length; i++) {
+                            tablinks[i].classList.remove("w3-light-grey");
+                          }
+                          document.getElementById(cityName).style.display = "block";
+                          evt.currentTarget.classList.add("w3-light-grey");
+                        }
+                        
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            close_model_id_01();
+                          }
+                        }
+                        </script> -->
+                         
+                        
+                    
+
+
+                    </section>
+
+                    <section>
+                    <h2>Tab 3 content</h2>
+                    <h1>Header 2</h1>
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+
+                    </section>
+
+                    <!-- <section>
+                    <h2>Tab 4 content</h2>
+                    </section> -->
+                </div>
                 
-                <h1>Header 1</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                </p>
-                
-                <button class="button1">Read More</button>
+                <div class="slider"><div class="indicator"></div></div>
+
+                </div>
+
                 
             </div>
-<br>
-<br>
-            <div class="header2">
-                <img
-                    id="headerimg2"
-                    src="https://wallpaperaccess.com/full/3734602.jpg"
-                    alt="Header 2 Img "
-                    height="423"
-                />
-                <h1>Header 2</h1>
-                
+        
+        <!-- leave this blank h2 alone -->
+        <br>        
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                </p>
-
-                <button class="button2">Read More</button>
-            </div>
-
-            <br>
-            <br>
-        </div>
-
-        <h2>Background Image</h2>
-
-        <p>
+        <!-- <p>
             By default, the background image will repeat itself if it is smaller
             than the element where it is specified, in this case the body
             element.
-        </p>
+        </p> --> 
         </div>
+
+    
     </body>
 
-    <script src="../js/investor.js"></script>
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"
-    ></script>
 </html>

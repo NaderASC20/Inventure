@@ -10,39 +10,18 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/startup.css">
 
-    <!-- <link rel="apple-touch-icon" sizes="57x57" href="../../images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../../images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../../images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../../images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../../images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../../images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../../images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json"> 
-
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../../images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
-
-    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-    TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
 </head>
 
 
 <body>
+
+    <p style="font-size: 36px; text-align: center; color: black; margin-top: 10%;">
+        startup portal
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="index.html"
             ><img
-                src="../../images/navBarLogo.svg"
+                src="/images/ms-icon-70x70.png"
                 alt=""
                 id="inventureSMALL"
         /></a>
@@ -91,139 +70,57 @@
     </nav>
 
     <div class="navDivider"></div>
-    <!-- navigation bar that slides down with the screen at the home page, Log in, Investor and Startup Portal -->
-    <!-- <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand" href="index.html"><img src="../../images/inventureSMALL.png" alt="" id="inventureSMALL"
-                height="61px" width="212px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-4">
-                <li class="nav-item">
-                    <a class="nav-link" data-value="startUpPortal" href="login.html" target="_blank">Start Up Portal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " data-value="investorPortal" target="_blank" href="login.html">Investor
-                        Portal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " target="_blank" data-value="login" href="login.html">Log in</a> </li>
-            </ul>
-        </div>
-    </nav> 
 
-     Webpage Contents Start here -->
-    <!-- <div class="portalContainer" id="portalContainerID">
-        <div class="portalText">
-            <p id="startup">Startup Portal</p>
-            <p id="whattype">What type of investors are you looking for?</p>
-        </div>
+    <div class = "body_rect">
+        <div class="font">
 
-        <div class="buttons">
-            <div>
-                <input type="checkbox" id="Angel Investors" name="Angel Investors">
-                <label for="Angel Investors">Angel Investors</label>
-            </div>
-            <div>
-                <input type="checkbox" id="Venture Capitalists" name="Venture Capitalists">
-                <label for="Venture Capitalists">Venture Capitalists</label>
-            </div>
-            <div>
-                <input type="checkbox" id="Personal Investors" name="Personal Investors">
-                <label for="Personal Investors">Personal Investors</label>
-            </div>
-
-            <div class="button">
-                <a href="#" id="submitButton" class="myButton"><strong>Submit</strong></a>
-            </div> -->
-
-        </div>
-
-        <!-- <div id="ResultsContainerID" class="ResultsContainer"> -->
-            <!-- <div id="investorCardID" class="investorCard">
-            <div id="nameTextDivID" class="nameTextDiv"><p class=nameText>John Shmoe</p></div>
-            <div id="pictureTextContainerID" class="pictureTextContainer">
-                <div id="imgContainerID" class="imgContainer">
-                    <img id="headshotIMG" src="https://randomuser.me/api/portraits/men/75.jpg">
-                </div>
-            </div>
+            <div class="font">
         
-            <div class="bioContactInfo">
-                <div class="pContainer">
-                    <p class="investorTypeText">Name: Angel Investor</p>
-                    <p class="AgeText">Age: 23 Years Old</p>
-                    <p class="EmailText">Email: example@gmail.com</p>
-                    <p class="LocationText">Location: New York, United States</p>
-                    <p class="PhoneTex">Phone #: 123-1345-2334</p> 
-                    <a href="#" class="myButton2">Chat Now</a>    
-                </div>
-            </div> -->
-            <!-- Investor Cards finished -->
-
-            <!-- CHAT WINDOW -->
-            <!-- <div id="chatWindowID" class="chatWindow">
-                <div class="chatHeader">
-                    <div class="headshotContainer"><img id="headshot"
-                            src="https://randomuser.me/api/portraits/med/men/75.jpg"></div>
-                    ET USER IMG -->
-                    <!-- <div>
-                        <p id=headerName class="headerName" style="font-size: 20px;" style="text-align: center;">Chat
-                            with John Smith</p>
-                    </div>
-                    <div><img id="xButtonID" class="xButton" src="../../images/X SVG.svg"></div>
-                </div>
-
-                <div class="messagingContainer">
-
-
-                </div>
-
-                <div class="inputBox" id="inputBoxID">
-                    <input id="inputBoxInput" type="text" placeholder="message">
-                    <button id="sendButton" style="font-size: 20px;">send</button>
-                </div> -->
-
+                <div class="tabs">
+                
+                    <input type="radio" id="tab1" name="tab-control" checked>
+                    <input type="radio" id="tab2" name="tab-control">
+                    <input type="radio" id="tab3" name="tab-control">  
+                    <!-- <input type="radio" id="tab4" name="tab-control"> -->
+                    <ul>
+                        <li title="tab 1"><label for="tab1" role="button"><span>Trending</span></label></li>
+                        <li title="tab 2"><label for="tab2" role="button"><span>Search</span></label></li>
+                        <li title="tab 3"><label for="tab3" role="button"><span>Following</span></label></li>
+                        <!-- <li title="tab 4"><label for="tab4" role="button"><span>Tab 4</span></label></li> -->
+                    </ul>
+    
+                    <div class="content">
+                        <section>
+                        <h2>Tab 1 content</h2>
+    
+          
+                
+                <h1></h1>
+                <p>
+                   
+                </p>
+                
+              
+<div id="box1" class="box1"></div>
+<div id="box2" class="box2"></div>
+<div id="box3" class="box3"></div>
+<div id="box4" class="box4"></div>
+<div id="box5" class="box5"></div>
+<div id="box6" class="box6"></div>
+<div id="box7" class="box7"></div>
+<div id="box8" class="box8"></div>
+<div id="box9" class="box9"></div>
             </div>
 
-        </div>
-
-    </div>
-    </div>
-    </div>
-
-
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-    //  https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
-
-    <!-- Your web app's Firebase configuration -->
-    <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyDvCCxbkl8CJsmkIr8CtW8SODOvmjpl89o",
-            authDomain: "inventure-50eb3.firebaseapp.com",
-            databaseURL: "https://inventure-50eb3.firebaseio.com",
-            projectId: "inventure-50eb3",
-            storageBucket: "inventure-50eb3.appspot.com",
-            messagingSenderId: "614561427282",
-            appId: "1:614561427282:web:49f54f33ef4bf171cbd48b",
-            measurementId: "G-Q79NDC6QZG"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-
-
+    <style type="text/css">
+#box1 {
+    height: 300px;
+    width: 250px;
+    background-color: #FF0;
+    float: left;
+}
+</style>
 </body> 
-
-
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -232,4 +129,4 @@
 <script src="../js/startup.js"></script>
 <script src="../js/chat.js"></script>
 
-</html>
+</html>/
