@@ -1,145 +1,114 @@
 <!DOCTYPE html>
 
 <html>
-    
-    <head class="supreme-container">
-        <title>Investor Portal</title>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="../css/investor.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-            rel="stylesheet"
-        />
 
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta
-            name="msapplication-TileImage"
-            content="../../images/ms-icon-144x144.png"
-        />
-        <meta name="theme-color" content="#ffffff" />
+<head class="supreme-container">
+    <title>Investor Portal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/investor.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Jura&display=swap"
-            rel="stylesheet"
-        />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../../images/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <style>
-            .city {display:none}
-        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet" />
 
-        <script src="../js/investor.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-        <!-- Collapsible  -->
-        <meta name="viewport" content1="width=device-width, initial-scale=1">
-        <!-- Collapsible -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <style>
+        .city {
+            display: none
+        }
+    </style>
 
-    </head>
+    <script src="../js/investor.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Collapsible  -->
+    <meta name="viewport" content1="width=device-width, initial-scale=1">
+    <!-- Collapsible -->
 
-    <body> 
-        
-        <div id="id01" class="w3-modal">
-            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-             <header class="w3-container w3-blue"> 
-              <span onclick="document.getElementById('id01').style.display='none'" 
-              class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-              <h2>Header</h2>
-             </header>
-           
-             <div class="w3-bar w3-border-bottom">
-              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button>
-              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button>
-              <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-             </div>
-           
-             <div id="London" class="w3-container city">
-              <h1>London</h1>
-              <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-             </div>
-           
-             <div id="Paris" class="w3-container city">
-              <h1>Paris</h1>
-              <p>Paris is the capital of France.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-             </div>
-           
-             <div id="Tokyo" class="w3-container city">
-              <h1>Tokyo</h1>
-              <p>Tokyo is the capital of Japan.</p><br>
-             </div>
-           
-             <div class="w3-container w3-light-grey w3-padding">
-              <button class="w3-button w3-right w3-white w3-border" 
-              onclick="document.getElementById('id01').style.display='none'">Close</button>
-             </div>
+</head>
+
+<body>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                <h2>Header</h2>
+            </header>
+
+            <div class="w3-bar w3-border-bottom">
+                <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tokyo')">Tokyo</button>
             </div>
-           </div>
-           
-           </div>
-        
+
+            <div id="London" class="w3-container city">
+                <h1>London</h1>
+                <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million
+                    inhabitants.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div id="Paris" class="w3-container city">
+                <h1>Paris</h1>
+                <p>Paris is the capital of France.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div id="Tokyo" class="w3-container city">
+                <h1>Tokyo</h1>
+                <p>Tokyo is the capital of Japan.</p><br>
+            </div>
+
+            <div class="w3-container w3-light-grey w3-padding">
+                <button class="w3-button w3-right w3-white w3-border"
+                    onclick="document.getElementById('id01').style.display='none'">Close</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
     <div class="supreme-container">
         <p style="font-size: 35px; text-align: center; color: black; margin-top: 10%;">
-            
+
         <nav class="navbar navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="index.html">
-                <img src="/images/image.jpg" alt="" id="inventureSMALL" style="height: 40px;"/>
-                <img src="/images/InkedinventureSMALL_LI.jpg" style="height: 30px; margin-top: 5px; margin-left: 15px;"/>
+                <img src="/images/image.jpg" alt="" id="inventureSMALL" style="height: 40px;" />
+                <img src="/images/InkedinventureSMALL_LI.jpg"
+                    style="height: 30px; margin-top: 5px; margin-left: 15px;" />
             </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-4">
                     <li class="nav-item">
-                        <a
-                            style="font-size: large;"
-                            class="nav-link"
-                            data-value="startUpPortal"
-                            href="login.html"
-                            target="_blank"
-                            >Start Up Portal</a
-                        >
+                        <a style="font-size: large;" class="nav-link" data-value="startUpPortal" href="login.html"
+                            target="_blank">Start Up Portal</a>
                     </li>
 
                     <li class="nav-item">
-                        <a
-                            style="font-size: large;"
-                            class="nav-link"
-                            target="_blank"
-                            data-value="login"
-                            href="login.html"
-                            >Log out</a
-                        >
+                        <a style="font-size: large;" class="nav-link" target="_blank" data-value="login"
+                            href="login.html">Log out</a>
                     </li>
                 </ul>
             </div>
         </nav>
-    
+
         <div class="navDivider"></div>
 
         <div>
@@ -149,12 +118,12 @@
         </div>
 
         <div class="font">
-        
+
             <div class="tabs">
-            
+
                 <input type="radio" id="tab1" name="tab-control" checked>
                 <input type="radio" id="tab2" name="tab-control">
-                <input type="radio" id="tab3" name="tab-control">  
+                <input type="radio" id="tab3" name="tab-control">
                 <!-- <input type="radio" id="tab4" name="tab-control"> -->
                 <ul>
                     <li title="tab 1"><label for="tab1" role="button"><span>Trending</span></label></li>
@@ -165,161 +134,169 @@
 
                 <div class="content">
                     <section>
-                        <span class="likebtn-wrapper" data-theme="review" data-ef_voting="heartbeat" data-white_label="true" data-identifier="item_1" data-show_like_label="false" data-dislike_enabled="false" data-counter_show="false" data-popup_disabled="true" data-tooltip_enabled="false" data-i18n_after_like="Loved" data-i18n_like_tooltip="I love this" data-i18n_unlike_tooltip="Unlove"></span>
-                        <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-                    <h2>Tab 1 content</h2>
+                        <!-- <span class="likebtn-wrapper" data-theme="review" data-ef_voting="heartbeat"
+                            data-white_label="true" data-identifier="item_1" data-show_like_label="false"
+                            data-dislike_enabled="false" data-counter_show="false" data-popup_disabled="true"
+                            data-tooltip_enabled="false" data-i18n_after_like="Loved"
+                            data-i18n_like_tooltip="I love this" data-i18n_unlike_tooltip="Unlove"></span> -->
+                        <script>(function (d, e, s) { if (d.getElementById("likebtn_wjs")) return; a = d.createElement(e); m = d.getElementsByTagName(e)[0]; a.async = 1; a.id = "likebtn_wjs"; a.src = s; m.parentNode.insertBefore(a, m) })(document, "script", "//w.likebtn.com/js/w/widget.js");</script>
+                        <h2>Tab 1 content</h2>
 
-                    <div class="header1">
-                        <img
-                            id="headerimg1"
-                            src="https://wallpaperaccess.com/full/3734602.jpg"
-                            alt="Header 1 Img "
-                            height="423"
-                        />
-                        
-                        <h1 style="margin-top: 3%;">Header 1</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                            amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
-                        </p>
-                        
-                        <button class="button1">Read More</button>
-                        
-                    </div>
+                        <div class="header1">
+                            <img id="headerimg1" src="https://wallpaperaccess.com/full/3734602.jpg" alt="Header 1 Img "
+                                height="423" />
 
-                    <div class="header2">
-                        <img
-                            id="headerimg2"
-                            src="https://wallpaperaccess.com/full/3734602.jpg"
-                            alt="Header 2 Img "
-                            height="423"
-                        />
-                        <h1 style="margin-top: 3%;">Header 2</h1>
-                        
-        
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                            amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
-                        </p>
-        
-                        <button class="button2">Read More</button>
-                    </div>
-                        
+                            <h1 style="margin-top: 3%;">Header 1</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                            </p>
+
+                            <button class="button1">Read More</button>
+
+                        </div>
+
+                        <div class="header2">
+                            <img id="headerimg2" src="https://wallpaperaccess.com/full/3734602.jpg" alt="Header 2 Img "
+                                height="423" />
+                            <h1 style="margin-top: 3%;">Header 2</h1>
+
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                            </p>
+
+                            <button class="button2">Read More</button>
+                        </div>
+
                     </section>
 
                     <section>
 
-                        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.."
+                            title="Type in a category">
 
-                        <ul id="myMenu">
-                            <li>
-                                <div class="w3-container">
-                                    <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> -->
-                                        <a href="#" style="color: turquoise;" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> Amazon </a>
-                                    <!-- </button> -->
+                        <ul id="myMenu" style="display: block; margin-left: 80%;">
+                            <div style="display: inline;">
+                                <li>
+                                    <div class="w3-container">
+                                        <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> -->
+                                        <a href="#" style="color: black;"
+                                            onclick="document.getElementById('id01').style.display='block'"
+                                            class="w3-button"> Amazon </a>
+                                        <!-- </button> -->
 
 
-                                    <div id="id01" class="w3-modal">
-                                     <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-                                      <header class="w3-container w3-blue"> 
-                                       <span onclick="document.getElementById('id01').style.display='none'" 
-                                       class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-                                       <h2>Header</h2>
-                                      </header>
-                                    
-                                      <div class="w3-bar w3-border-bottom">
-                                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button>
-                                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button>
-                                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                                      </div>
-                                    
-                                      <div id="London" class="w3-container city">
-                                       <h1>London</h1>
-                                       <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                      </div>
-                                    
-                                      <div id="Paris" class="w3-container city">
-                                       <h1>Paris</h1>
-                                       <p>Paris is the capital of France.</p>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                      </div>
-                                    
-                                      <div id="Tokyo" class="w3-container city">
-                                       <h1>Tokyo</h1>
-                                       <p>Tokyo is the capital of Japan.</p><br>
-                                      </div>
-                                    
-                                      <div class="w3-container w3-light-grey w3-padding">
-                                       <button class="w3-button w3-right w3-white w3-border" 
-                                       onclick="document.getElementById('id01').style.display='none'">Close</button>
-                                      </div>
-                                     </div>
+                                        <div id="id01" class="w3-modal">
+                                            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+                                                <div class="w3-bar w3-border-bottom">
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'London')">London</button>
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'Paris')">Parris</button>
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                                                    <!-- <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'Ghana')">Ghana</button> -->
+                                                </div>
+
+                                                <div id="Londonn" class="w3-container city">
+                                                    <h1>Londonn</h1>
+                                                    <p>London is the most populous city in the United Kingdom, with a
+                                                        metropolitan area of over 9 million inhabitants.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat.</p>
+                                                </div>
+
+                                                <div id="Paris" class="w3-container city">
+                                                    <h1>Paris</h1>
+                                                    <p>Paris is the capital of France.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+
+                                                <div id="Tokyo" class="w3-container city">
+                                                    <h1>Tokyo</h1>
+                                                    <p>Tokyo is the capital of Japan.</p><br>
+                                                </div>
+
+                                                <!-- <div id="Ghana" class="w3-container city">
+                                                    <h1>Ghana</h1>
+                                                    <p>Tokyo is the capital of Japan.</p><br>
+                                                </div> -->
+
+                                                <div class="w3-container w3-light-grey w3-padding">
+                                                    <button class="w3-button w3-right w3-white w3-border"
+                                                        onclick="document.getElementById('id01').style.display='none'">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    
-                                    </div>
-                                    
+
                                     <script>
-                                    document.getElementsByClassName("tablink")[0].click();
-                                    
-                                    function openCity(evt, cityName) {
-                                      var i, x, tablinks;
-                                      x = document.getElementsByClassName("city");
-                                      for (i = 0; i < x.length; i++) {
-                                        x[i].style.display = "none";
-                                      }
-                                      tablinks = document.getElementsByClassName("tablink");
-                                      for (i = 0; i < x.length; i++) {
-                                        tablinks[i].classList.remove("w3-light-grey");
-                                      }
-                                      document.getElementById(cityName).style.display = "block";
-                                      evt.currentTarget.classList.add("w3-light-grey");
-                                    }
-        
-                                    // Get the modal
-                                    var modal = document.getElementById('id01');
-        
-                                    // When the user clicks anywhere outside of the modal, close it
-                                    window.onclick = function(event) {
-                                    if (event.target == modal) {
-                                        modal.style.display = "none";
-                                    }
-                                }
-        
+                                        document.getElementsByClassName("tablink")[0].click();
+
+                                        function openCity(evt, cityName) {
+                                            var i, x, tablinks;
+                                            x = document.getElementsByClassName("city");
+                                            for (i = 0; i < x.length; i++) {
+                                                x[i].style.display = "none";
+                                            }
+                                            tablinks = document.getElementsByClassName("tablink");
+                                            for (i = 0; i < x.length; i++) {
+                                                tablinks[i].classList.remove("w3-light-grey");
+                                            }
+                                            document.getElementById(cityName).style.display = "block";
+                                            evt.currentTarget.classList.add("w3-light-grey");
+                                        }
+
+                                        // Get the modal
+                                        var modal = document.getElementById('id01');
+
+                                        // When the user clicks anywhere outside of the modal, close it
+                                        window.onclick = function (event) {
+                                            if (event.target == modal) {
+                                                modal.style.display = "none";
+                                            }
+                                        }
+
                                     </script>
 
 
 
 
-                                
 
 
 
@@ -337,19 +314,212 @@
 
 
 
-                                
-                            </li>
-                            <li><a href="#">CSS</a></li>
-                            <li><a href="#">JavaScript</a></li>
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">Python</a></li>
-                            <li><a href="#">jQuery</a></li>
-                            <li><a href="#">SQL</a></li>
-                            <li><a href="#">Bootstrap</a></li>
-                            <li><a href="#">Node.js</a></li>
+
+
+                                </li>
+
+                                <li>
+                                    <div class="w3-container">
+                                        <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> -->
+                                        <a href="#" style="color: black;"
+                                            onclick="document.getElementById('id01').style.display='block'"
+                                            class="w3-button"> Best Buy </a>
+                                        <!-- </button> -->
+
+
+                                        <div id="id01" class="w3-modal">
+                                            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                                <header class="w3-container w3-blue">
+                                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                                        class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                                                    <h2>Header</h2>
+                                                </header>
+
+                                                <div class="w3-bar w3-border-bottom">
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'London')">London</button>
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'Paris')">Paris</button>
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                                                </div>
+
+                                                <div id="London" class="w3-container city">
+                                                    <h1>London</h1>
+                                                    <p>London is the most populous city in the United Kingdom, with a
+                                                        metropolitan area of over 9 million inhabitants.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat.</p>
+                                                </div>
+
+                                                <div id="Paris" class="w3-container city">
+                                                    <h1>Paris</h1>
+                                                    <p>Paris is the capital of France.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+
+                                                <div id="Tokyo" class="w3-container city">
+                                                    <h1>Tokyo</h1>
+                                                    <p>Tokyo is the capital of Japan.</p><br>
+                                                </div>
+
+                                                <div class="w3-container w3-light-grey w3-padding">
+                                                    <button class="w3-button w3-right w3-white w3-border"
+                                                        onclick="document.getElementById('id01').style.display='none'">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <script>
+                                        document.getElementsByClassName("tablink")[0].click();
+
+                                        function openCity(evt, cityName) {
+                                            var i, x, tablinks;
+                                            x = document.getElementsByClassName("city");
+                                            for (i = 0; i < x.length; i++) {
+                                                x[i].style.display = "none";
+                                            }
+                                            tablinks = document.getElementsByClassName("tablink");
+                                            for (i = 0; i < x.length; i++) {
+                                                tablinks[i].classList.remove("w3-light-grey");
+                                            }
+                                            document.getElementById(cityName).style.display = "block";
+                                            evt.currentTarget.classList.add("w3-light-grey");
+                                        }
+
+                                        // Get the modal
+                                        var modal = document.getElementById('id01');
+
+                                        // When the user clicks anywhere outside of the modal, close it
+                                        window.onclick = function (event) {
+                                            if (event.target == modal) {
+                                                modal.style.display = "none";
+                                            }
+                                        }
+
+                                    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </li>
+                                <li>
+
+                                    <div class="w3-container">
+                                        <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"> -->
+                                        <a href="#" style="color: black;"
+                                            onclick="document.getElementById('id01').style.display='block'"
+                                            class="w3-button"> CVS </a>
+                                        <!-- </button> -->
+
+
+                                        <div id="id01" class="w3-modal">
+                                            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                                <header class="w3-container w3-blue">
+                                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                                        class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                                                    <h2>Header</h2>
+                                                </header>
+
+                                                <div class="w3-bar w3-border-bottom">
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'London')">London</button>
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'Paris')">Paris</button>
+                                                    <button class="tablink w3-bar-item w3-button"
+                                                        onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                                                </div>
+
+                                                <div id="London" class="w3-container city">
+                                                    <h1>London</h1>
+                                                    <p>London is the most populous city in the United Kingdom, with a
+                                                        metropolitan area of over 9 million inhabitants.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat.</p>
+                                                </div>
+
+                                                <div id="Paris" class="w3-container city">
+                                                    <h1>Paris</h1>
+                                                    <p>Paris is the capital of France.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                </div>
+
+                                                <div id="Tokyo" class="w3-container city">
+                                                    <h1>Tokyo</h1>
+                                                    <p>Tokyo is the capital of Japan.</p><br>
+                                                </div>
+
+                                                <div class="w3-container w3-light-grey w3-padding">
+                                                    <button class="w3-button w3-right w3-white w3-border"
+                                                        onclick="document.getElementById('id01').style.display='none'">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <script>
+                                        document.getElementsByClassName("tablink")[0].click();
+
+                                        function openCity(evt, cityName) {
+                                            var i, x, tablinks;
+                                            x = document.getElementsByClassName("city");
+                                            for (i = 0; i < x.length; i++) {
+                                                x[i].style.display = "none";
+                                            }
+                                            tablinks = document.getElementsByClassName("tablink");
+                                            for (i = 0; i < x.length; i++) {
+                                                tablinks[i].classList.remove("w3-light-grey");
+                                            }
+                                            document.getElementById(cityName).style.display = "block";
+                                            evt.currentTarget.classList.add("w3-light-grey");
+                                        }
+
+                                        // Get the modal
+                                        var modal = document.getElementById('id01');
+
+                                        // When the user clicks anywhere outside of the modal, close it
+                                        window.onclick = function (event) {
+                                            if (event.target == modal) {
+                                                modal.style.display = "none";
+                                            }
+                                        }
+
+                                    </script>
+
+                                </li>
+                                <!-- <li><a href="#">PHP</a></li>
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">SQL</a></li>
+                                <li><a href="#">Bootstrap</a></li>
+                                <li><a href="#">Node.js</a></li> -->
+                            </div>
                         </ul>
 
-                        
 
 
 
@@ -372,54 +542,102 @@
 
 
 
-                    <h1>Tab 2 content</h1>
+
+                        <h1>Tab 2 content</h1>
                     </section>
 
                     <section>
-                    <h2>Tab 3 content</h2>
-                    <h1>Header 2</h1>
-                    <!-- Collapsible -->
-                    <div>
-                        <h2>Collapsibles</h2>
+                        <h2>Tab 3 content</h2>
+                        <h1 style="text-align: center;">Followed Startups</h1>
+                        <!-- Collapsible -->
+                        <div>
+                            <h2>Collapsibles</h2>
 
-                        
-                        
-                        
-                        
-                        <button type="button" class="collapsible">Open Section 1</button>
-                        <div class="content1">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <button type="button" class="collapsible">Open Section 2</button>
-                        <div class="content1">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <button type="button" class="collapsible">Open Section 3</button>
-                        <div class="content1">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <script>
-                            var coll = document.getElementsByClassName("collapsible");
-                            var i;
-                            
-                            for (i = 0; i < coll.length; i++) {
-                              coll[i].addEventListener("click", function() {
-                                this.classList.toggle("active");
-                                var content = this.nextElementSibling;
-                                if (content.style.display === "block") {
-                                  content.style.display = "none";
-                                } else {
-                                  content.style.display = "block";
+
+
+
+
+                            <button type="button" class="collapsible">Startup #1</button>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <br>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                                <br>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <
+
+                            </div>
+
+                            <br>
+
+
+                            <button type="button" class="collapsible">Startup #2</button>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <br>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                                <br>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+
+                            <br>
+
+
+                            <button type="button" class="collapsible">Startup #3</button>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <br>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <br>
+
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <script>
+                                var coll = document.getElementsByClassName("collapsible");
+                                var i;
+
+                                for (i = 0; i < coll.length; i++) {
+                                    coll[i].addEventListener("click", function () {
+                                        this.classList.toggle("active");
+                                        var content = this.nextElementSibling;
+                                        if (content.style.display === "block") {
+                                            content.style.display = "none";
+                                        } else {
+                                            content.style.display = "block";
+                                        }
+                                    });
                                 }
-                              });
-                            }
                             </script>
 
-                    </div>
-                    <!-- Collapsible -->
-                          
-                      
-                        
+                        </div>
+                        <!-- Collapsible -->
 
 
 
@@ -448,25 +666,11 @@
 
 
 
-        
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                            amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum.
-                        </p>
+
+
+
+
+
 
                     </section>
 
@@ -474,25 +678,27 @@
                     <h2>Tab 4 content</h2>
                     </section> -->
                 </div>
-                
-                <div class="slider"><div class="indicator"></div></div>
 
+                <div class="slider">
+                    <div class="indicator"></div>
                 </div>
 
-                
             </div>
-        
+
+
+        </div>
+
         <!-- leave this blank h2 alone -->
-        <br>        
+        <br>
 
         <!-- <p>
             By default, the background image will repeat itself if it is smaller
             than the element where it is specified, in this case the body
             element.
-        </p> --> 
-        </div>
+        </p> -->
+    </div>
 
-    
-    </body>
+
+</body>
 
 </html>

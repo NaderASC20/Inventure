@@ -3,9 +3,12 @@ nav {
     height: 7vh;
 }
 
+* {
+  /* border: red 1px solid; */
+}
+
 .startup-container * {
-  border: red 1px solid;
-  margin: 0;
+  /* border: red 1px solid; */
   padding: 0;
   box-sizing: border-box;
 }
@@ -63,17 +66,18 @@ html {
     text-align: center;
 }
 .title {
-    font-family: 'Lato';
+    font-family: 'Jura';
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
     line-height: 86px;
+    color: white;
 }
 
 html {
     background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a);
     height: 200%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Jura';
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -81,7 +85,7 @@ html {
 
 body {
     background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Jura';
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -90,7 +94,7 @@ body {
 .startup-container {
   display: grid;
   width: 85%;
-  height: 1000px;
+  height: 2000px;
   background: white;
   border-radius: 68px;
   margin: 0 auto;
@@ -98,7 +102,7 @@ body {
 }
 
 .startup-container{
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 5% 95%;
 }
 .startup-container .tab-container {
   width: 100%;
@@ -149,25 +153,106 @@ body {
 .trending-container .trending-wrapper {
   width: 100%;
   height: 100%;
-    background-color: green;
+    background-color: white;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.search-grid {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  max-height: 100%;
+}
+
+.type-search-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-size: 8px;
+}
+
+.type-search-container h1 {
+  font-size: 36px;
 }
 
 .search-container .search-wrapper {
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   height: 100%;
-  background-color: red;
-  
+  background-color: white;
+  display: grid;
+}
+
+a:hover {
+  background-color: rgba(196,196,196,0.24);
 }
 
 .following-container .following-wrapper {
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: white;
 }
 
+.filterContainer {
+  display: grid;
+  grid-template-columns: 10% 10% 80%;
+  grid-template-rows: 100%;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
 
+.searchbox {
+  width: 100%;
+  height: 87px;
+  background: #ECECEC;
+  border-radius: 100px;
+}
 
-/* .body_rect {
+.BoxGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.box {
+  padding: 15px;
+  border-radius: 35px;
+  background-color: whitesmoke;
+}
+
+.blur-background {
+  display: none;
+  overflow: visible;
+  backdrop-filter: blur(4px);
+  background-color: rgba(20, 20, 20, .40);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.pop-up-card {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 26vh;
+  height: 70%;
+  width: 70%;
+}
+
+.pop-up-card img {
+  z-index: 999;
+  position: absolute;
+  left: 40vw;
+  top: 10vh
+}
+
+/* / .body_rect {
   height: max-content;
   background-color: white;
   display: block;
@@ -180,46 +265,23 @@ body {
   padding-left: 2.5%;
   padding-right: 2.5%;
   
-}  */
-/* 
- .grid {
+} 
+.search-container{
   display: -webkit-flex;       
   flex-wrap: wrap;      
   justify-content: space-evenly;
-}
+} */
 
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+/* .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
   flex: 0 0 32%;
-  width: 200px;
+  width: 341px;
   height: 501px;
   background-color: rgba(196, 196, 196, 0.24);
   padding: 10px;
   border-radius: 68px;
-  margin: 10px;
-}  */
-/* .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+  margin: 10px; */
 
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6,
-.box7,
-.box8,
-.box9 {
-    flex: 0 0 32%;
-    width: 200px;
-    height: 501px;
-    background-color: rgba(196, 196, 196, 0.24);
-    padding: 10px;
-    border-radius: 68px;
-    margin: 2px;
-} */
+
 
 /* ------------------------END OF TAB CSS---------------------------------------------------------- */
 
@@ -229,7 +291,7 @@ body {
   width: px;
   background-color: rgba(196,196,196,0.24)
   border-radius: 68px;
-  margin-left: 20px;
+  
 }
 
 .box2, .box3 {
@@ -237,9 +299,9 @@ body {
   width: 341px;
   background-color: rgba(196,196,196,0.24);
   border-radius: 68px;
-  margin-right: 50px;
+  margin-right: 50px; */
 
-  } */
+  
 
 /* .box4 {
   height: 501px;
@@ -247,9 +309,8 @@ body {
   background-color: rgba(196,196,196,0.24);
   border-radius: 68px;
   
-  margin-right: 40px;
-  margin-bottom: 100px;
-  }
+
+  } 
 
   .box5, .box6 {
     height: 501px;
@@ -280,4 +341,4 @@ body {
         margin-right: 40px;
         margin-bottom: 100px;
         } */
-
+ 
