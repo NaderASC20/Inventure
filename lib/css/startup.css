@@ -4,7 +4,10 @@ nav {
 }
 
 * {
-  /* border: red 1px solid; */
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  
 }
 
 .startup-container * {
