@@ -58,7 +58,11 @@ nav {
 }
 
 .navbar {
-    background: #47a7ee;
+    /* background: #47a7ee; */
+    /* GRADIENT */
+
+    background:#02075D;
+    /* background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a); */
     font-size: 24;
     max-height: 10vh;
 }
@@ -152,7 +156,9 @@ p {
 }
 
 .startupInvestorContainer a {
-    background: #47a7ee;
+    /* background: #47a7ee; */
+    /* GRADIENT  */
+    background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a);
     border-radius: 35px;
     border: none;
     padding: 14px;
@@ -221,7 +227,10 @@ p {
 
 .footerContainer {
     margin-top: 6vh;
-    background-color: #47a7ee;
+    /* background-color: #47a7ee; */
+    /* GRADIENT */
+    /* background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a); */
+    background:#02075D;
     width: 100vw;
     height: 40vh;
     display: flex;
@@ -238,6 +247,7 @@ p {
     list-style-type: none;
     flex-direction: row;
     justify-content: space-evenly;
+    /* background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a); */
 }
 
 .buttonsContainer ul a {
@@ -261,6 +271,7 @@ p {
 }
 
 .buttonsContainer .divider {
+    
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
