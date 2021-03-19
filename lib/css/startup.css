@@ -64,7 +64,6 @@ ul {
     justify-content: flex-end;
 }
 /* -------------- END OF NAV BAR -------------- */
-
 body {
     background-image: linear-gradient(to bottom right, #2f23ad, #e74c9a);
     font-family: 'Montserrat', sans-serif;
@@ -413,10 +412,10 @@ a:hover {
 }
 
 .data-Container {
-    display: grid;
+    display: none;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
     width: 100%;
     height: 100%;
 }
@@ -430,7 +429,7 @@ a:hover {
     width: 10rem;
     line-height: 1.2;
     width: 15rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .amount_number_investments {
@@ -463,9 +462,37 @@ a:hover {
 }
 
 .funding-Container {
-    display: none;
+    display: grid;
+    grid-template-rows: repeat(1fr, 7);
+    grid-gap: 0.7rem;
     width: 100%;
     height: 100%;
+    font-size: 1.5rem;
+}
+
+.funding-Container p {
+    width: 10rem;
+    text-align: center;
+}
+
+.funding-Container .date_name_amount_titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.funding-Container .funding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gradient .amount {
+    font-size: 12rem;
+}
+
+.funding p {
+    font-size: 1.1rem;
 }
 
 .news-Container {
@@ -510,5 +537,5 @@ a:hover {
     background: -webkit-linear-gradient(#2f23ad, #e74c9a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
