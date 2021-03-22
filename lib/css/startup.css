@@ -212,10 +212,10 @@ body {
 }
 
 .trending-container .trending-wrapper {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 100%;
     background-color: white;
-    display: grid;
     grid-template-rows: 20% 80%;
 }
 
@@ -248,7 +248,8 @@ a:hover {
 }
 
 .following-container .following-wrapper {
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     height: 100%;
     background-color: white;
 }
@@ -290,6 +291,8 @@ a:hover {
     width: 0px;
 }
 
+ 
+  
 /* END OF SEARCH BAR */
 
 .BoxGrid {
@@ -353,9 +356,10 @@ a:hover {
     grid-gap: 20px;
     border-radius: 40px;
     margin: 0 auto;
-    margin-top: 18vh;
-    height: 80vh;
+    margin-top: 16vh;
+    height: 750px;
     width: 60%;
+    margin-bottom: 20px;
 }
 
 .picture-card {
@@ -387,6 +391,11 @@ a:hover {
 
 .tab-container-startup li {
     justify-content: space-evenly;
+}
+
+.tab-container-startup ul li a:hover {
+    color: white !important;
+    background-color: #2f23ad;
 }
 
 .tab-container-startup a {
@@ -584,6 +593,7 @@ a:hover {
    
 }
 
+
 .popup_button:hover {
     cursor: pointer;
 }
@@ -669,4 +679,15 @@ a:hover {
     position: relative;
     margin-top: 14vh;
     margin-left: -91px;
+}
+
+.following-wrapper .BoxGrid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trending-wrapper .BoxGrid{
+    height: 100%;
 }
