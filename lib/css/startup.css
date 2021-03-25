@@ -291,8 +291,6 @@ a:hover {
     width: 0px;
 }
 
- 
-  
 /* END OF SEARCH BAR */
 
 .BoxGrid {
@@ -583,16 +581,13 @@ a:hover {
     color: white;
     font-family: 'Lato';
     padding: 0.5rem;
-    
 }
 
 .popup_button {
     position: relative;
     bottom: -508.5px;
     text-align: center;
-   
 }
-
 
 .popup_button:hover {
     cursor: pointer;
@@ -609,14 +604,12 @@ a:hover {
     color: white;
     font-family: 'Lato';
     padding: 0.5rem;
-    
 }
 
 .popup_button2 {
     position: relative;
     bottom: -508.5px;
     text-align: center;
-   
 }
 
 .popup_button2:hover {
@@ -633,14 +626,12 @@ a:hover {
     color: white;
     font-family: 'Lato';
     padding: 0.5rem;
-    
 }
 
 .popup_button3 {
     position: relative;
     bottom: -508.5px;
     text-align: center;
-
 }
 
 .popup_button3:hover {
@@ -657,7 +648,14 @@ a:hover {
 /* PROFIL */
 .profile {
     text-align: center;
-    
+}
+
+.profile h1 {
+    margin: 1rem 0px;
+}
+
+.angel p {
+    margin: 1rem 0px;
 }
 .angel {
     text-align: center;
@@ -671,8 +669,12 @@ a:hover {
     height: 20px;
 }
 
+.box .investor-caption {
+    margin-top: 16rem;
+    text-align: center;
+}
+
 .picture-card2 img {
-   
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -681,13 +683,13 @@ a:hover {
     margin-left: -91px;
 }
 
-.following-wrapper .BoxGrid{
+.following-wrapper .BoxGrid {
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.trending-wrapper .BoxGrid{
+.trending-wrapper .BoxGrid {
     height: 100%;
 }
