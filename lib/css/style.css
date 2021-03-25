@@ -311,3 +311,8 @@ p {
     border-radius: 50%;
     color: white;
 }
+
+a:hover {
+    color: white;
+    border-radius: 10px;
+}
