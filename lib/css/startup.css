@@ -645,7 +645,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* PROFIL */
+/* PROFILE */
 .profile {
     text-align: center;
 }
@@ -693,3 +693,78 @@ a:hover {
 .trending-wrapper .BoxGrid {
     height: 100%;
 }
+
+.BoxGrid1 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.box1 {
+    padding: 15px;
+    border-radius: 35px;
+    background-color: whitesmoke;
+    height: 80%;
+}
+
+.divider {
+    position: relative;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgb(0, 0, 0),
+        transparent
+    );
+}
+
+.blur-background {
+    display: none;
+    overflow: visible;
+    backdrop-filter: blur(4px);
+    background-color: rgba(20, 20, 20, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    height: 100vh;
+}
+
+.title-type-text {
+    text-align: center;
+    line-height: 0;
+}
+
+.pop-up-card {
+    padding: 40px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1% 10% 10% 5% 1% 62%;
+    grid-gap: 20px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 18vh;
+    height: 80vh;
+    width: 60%;
+}
+
+.picture-card {
+    margin: 0 auto;
+    margin-top: -14vh;
+    width: 200px;
+    height: 200px;
+}
+
