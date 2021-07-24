@@ -20,8 +20,9 @@
 }
 
 #inventureSMALL {
-  width: 10%;
-  margin: 0 10px;
+  width: 60px;
+  height: 60px;
+  margin: 5px 10px;
 }
 
 .navbar-brand {
