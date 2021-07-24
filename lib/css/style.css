@@ -19,6 +19,25 @@
   margin-top: 61px;
 }
 
+#inventureSMALL {
+  width: 10%;
+  margin: 0 10px;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.startupInvestorContainer {
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -30,9 +49,8 @@ h1 {
 
 .divider {
   position: relative;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  height: 1px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .div-transparent:before {
@@ -86,10 +104,6 @@ nav {
   flex-direction: row;
 }
 
-#inventureSmall {
-  size: 40%;
-}
-
 .nav-link {
   margin-right: 1em !important;
 }
@@ -122,9 +136,6 @@ html {
   border: 1px solid #cecece;
 }
 
-.informationContainer {
-  margin-top: 7vh;
-}
 .missionContainer {
   height: 34.87vh;
   width: 100vw;
@@ -163,7 +174,6 @@ p {
   text-align: center;
   width: 683px;
   height: 440px;
-  margin-left: 10vw;
 }
 
 .startupInvestorContainer a {
@@ -189,14 +199,13 @@ p {
   text-align: center;
   width: 683px;
   height: 440px;
-  margin-right: 10vw;
-  margin-left: 5vw;
 }
 
 .startupInvestorContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .forStartupsContainer img {
@@ -225,10 +234,10 @@ p {
   text-align: center;
   display: flex;
   flex-direction: row;
-  max-width: 40vw;
   height: 225px;
   text-align: center;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .fundingDesc p {
@@ -325,4 +334,13 @@ p {
 a:hover {
   color: white;
   border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1365px) {
+  .forInvestorsContainer {
+    margin-top: 4rem;
+  }
 }
